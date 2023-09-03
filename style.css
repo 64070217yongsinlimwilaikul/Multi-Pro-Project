@@ -1,0 +1,115 @@
+:root {
+    --blue: #001B7C;
+    --red: #FF3A21;
+    --white: #ffffff;
+}
+
+@font-face { font-family: CSPrajad; src: url('assets/fonts/CSPraJad\ v2.otf'); }
+@font-face { font-family: CSPrajadBold; src: url('assets/fonts/CSPraJad-bold\ v2.otf'); } 
+
+body  {
+    font-family: CSPrajad;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* gradient */
+.blue-to-red-gra{
+    background: linear-gradient(180deg, var(--blue) 0%, var(--red) 100%);
+    width: 100%;
+    height: 100%;
+}
+.red-to-blue-gra{
+    background: linear-gradient(180deg, var(--red) 0%, var(--blue) 100%);
+    width: 100%;
+    height: 100%;
+}
+.blue-to-white-gra{
+    background: linear-gradient(180deg, var(--blue) 0%, var(--white) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+/* reuseable thingy */
+.part-title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part-number{
+    color: white;
+    font-size: 60;
+    /*position: relative;
+    top: 45%;*/
+}
+.part-name{
+    color: var(--red);
+    font-size: 100;
+    font-family: CSPrajadBold;
+    /*text-align: center;
+    position: relative;
+    top: 48%;*/
+}
+
+.monologue{
+    /* for text that white text in the middle of screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: black; 
+}
+
+.monologue-text{
+    /* this limit the text to only takes up 50% of the screen */
+    width: 50%;
+}
+
+/* PART ONE INTERVIEW's sections */
+/* อาจจะเปลือง css หน่อยแต่ถ้าทำอย่างนี้คิดว่าน่าจะ implement scroll animation ได้ง่ายกว่า */
+#part-0-section-1{
+    /*that blank blue scrren*/
+    background-color: var(--blue);
+    width: 100%;
+    height: 100%;
+}
+#part-0-section-2{
+    /*company name*/
+    background-color: var(--red);
+    width: 100%;
+    height: 100%;
+}
+#part-0-section-3{
+    /*this webtoon*/
+    background-color: var(--blue);
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+#part-0-section-4{
+    /*Chapter Title*/
+    background-color: var(--blue);
+    width: 100%;
+    height: 200%;
+}
+#part-0-section-5{
+    /*Chapter Title*/
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+}
+#part-0-section-6{
+    /*Chapter Title*/
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+}
+#part-0-section-7{
+    /*Chapter Title*/
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+}
