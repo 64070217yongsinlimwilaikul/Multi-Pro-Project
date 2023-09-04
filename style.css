@@ -113,3 +113,67 @@ body  {
     width: 100%;
     height: 100%;
 }
+
+/* related to fade to show gimmick */
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.from-bottom {
+    animation: fade-bottom 0.5s ease-in;
+  }
+  .active.from-top {
+    animation: fade-top 0.5s ease-in;
+  }
+  .active.from-left {
+    animation: fade-left 0.5s ease-in;
+  }
+  .active.from-right {
+    animation: fade-right 0.5s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-top {
+    /* this looks really weird but it's here*/
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
