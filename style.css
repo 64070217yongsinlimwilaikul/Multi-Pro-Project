@@ -40,14 +40,14 @@ body  {
 }
 .part-number{
     color: white;
-    font-size: 60;
+    font-size: 60px;
     font-family:  'Pridi', serif;
     /*position: relative;
     top: 45%;*/
 }
 .part-name{
     color: var(--red);
-    font-size: 100;
+    font-size: 100px;
     font-family:  'Pridi', serif;
     /*text-align: center;
     position: relative;
@@ -85,6 +85,7 @@ body  {
   color: var(--white);
   background-color: var(--red);
   border-radius: 10px;
+  border: none;
 }
 
 /* PART ONE INTERVIEW's sections */
@@ -94,6 +95,14 @@ body  {
     background-color: var(--blue);
     width: 100%;
     height: 100%;
+    color: var(--white) !important;
+}
+#part-0-section-1b{
+  /*that blank blue scrren*/
+  background-color: var(--blue);
+  width: 100%;
+  height: 150%;
+  color: var(--white) !important;
 }
 #part-0-section-2{
     /*company name*/
@@ -106,7 +115,7 @@ body  {
     background-color: var(--blue);
     width: 100%;
     height: 100%;
-    color: white;
+    color: var(--white) !important;
 }
 #part-0-section-4{
     /*Chapter Title*/
