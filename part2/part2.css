@@ -1,0 +1,14 @@
+@font-face { font-family: CSPrajad; src: url('assets/fonts/CSPraJad\ v2.otf'); }
+@font-face { font-family: CSPrajadBold; src: url('assets/fonts/CSPraJad-bold\ v2.otf'); }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: CSPrajad;
+    text-decoration: none;
+}
+/*เดะกุมาแปป ท้องเสียย*/
+body{
+    min-height: 500vh;
+}
