@@ -1,14 +1,187 @@
-@font-face { font-family: CSPrajad; src: url('assets/fonts/CSPraJad\ v2.otf'); }
-@font-face { font-family: CSPrajadBold; src: url('assets/fonts/CSPraJad-bold\ v2.otf'); }
+@font-face { font-family: CSPrajad; src: url('../assets/fonts/CSPraJad\ v2.otf'); }
+@font-face { font-family: CSPrajadBold; src: url('../assets/fonts/CSPraJad-bold\ v2.otf'); }
 
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     font-family: CSPrajad;
     text-decoration: none;
 }
-/*เดะกุมาแปป ท้องเสียย*/
 body{
-    min-height: 500vh;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --blue: #001B7C;
+    --red: #FF3A21;
+    --white: #ffffff;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
+.story{
+    height: 125%;
+}
+#section-1{
+    background-color: var(--blue);
+}
+#section-2{
+    height: 200%;
+}
+#section-5{ 
+    padding: 0 3rem 0 3rem;
+}
+.story-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img-1{
+    width: 100%;
+}
+.book{
+    height: 60vw;
+    margin-right: 1rem;
+}
+.part-title, .story{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part-number{
+    color: white;
+    font-size: 4vw;
+    font-family:  'Pridi', serif;
+}
+.part-name{
+    color: var(--red);
+    font-size: 7vw;
+    font-family:  'Pridi', serif;
+}
+.text{
+    font-size: 5vw;
+}
+.word-bubble{
+    height: 100%;
+    width: 25%;
+    border: 1px solid black;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+}
+#word-buble-1{
+    margin: auto;
+    left: 0;
+    right:0;
+    bottom: -80%;
+}
+.book0{ 
+    margin-left: -28.5vw;
+}
+/* responsive */
+@media screen and (width < 1000px) {
+    .part-number{
+        font-size: 7vw;
+    }
+    .part-name{
+        font-size: 10vw;
+    }
+}
+@media screen and (width > 1080px) {
+    .word-bubble{
+        font-size: 1.5rem;
+    }
+    .book{
+        height: 40vw;
+        margin-right: 2rem;
+    }
+}
+
+/* gradient */
+.blue-to-red-gra{
+    background: linear-gradient(180deg, var(--blue) 0%, var(--red) 100%);
+    width: 100%;
+    height: 100%;
+}
+.red-to-blue-gra{
+    background: linear-gradient(180deg, var(--red) 0%, var(--blue) 100%);
+    width: 100%;
+    height: 100%;
+}
+.blue-to-white-gra{
+    background: linear-gradient(180deg, var(--blue) 0%, var(--white) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+/* related to fade to show gimmick */
+.reveal, .reveal-2{
+    position: relative;
+    opacity: 0;
+  }
+  
+.reveal.active, .reveal-2.active{
+  opacity: 1;
+}
+.active.from-bottom {
+  animation: fade-bottom 0.5s ease-in;
+}
+.active.from-top {
+  animation: fade-top 0.5s ease-in;
+}
+.active.from-left {
+  animation: fade-left 0.5s ease-in;
+}
+.active.from-right {
+  animation: fade-right 0.5s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-top {
+  /* this looks really weird but it's here*/
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
