@@ -33,9 +33,12 @@ section{
 #section-2{
   height: 200%; /* ความยาวของหน้า "ฉันทำงานมา 5 ปีแล้ว" */
 }
-#section-11, #section-12{
+#section-11, #section-12, #section-13{
   flex-direction: column;
   gap: 2rem; /* section 11 ให้รูปกับข้อความอยู่คนละบรรทัด + กับเว้นช่องว่างระหว่างกัน */
+}
+#section-13{
+  max-height: 70vw;
 }
 .story-details{
     display: flex;
@@ -50,6 +53,12 @@ section{
   margin-left: -25vw;
 /* ภาพกองหนังสืออันแรกที่ยังไม่มีหนังสือภาพมันไม่เท่ากับอันอื่น ตอนหน้าจอ < 960px*/
 }
+#phone{
+  transform: scale(1.2, 1.2);
+}
+.phone-shake{
+  animation: shaking-phone 1.5s ease-in infinite;
+}
 .img-vertical{
   width: 50vw; /* ขนาดรูปโพสอิท  ตอนหน้าจอ < 960px*/
 }
@@ -62,6 +71,12 @@ section{
 }
 .book0{
   margin-left: -25.7vw;
+}
+#phone-background{
+  background-image: url(../assets/img/PART2/PART2_5\(croped\).png);
+  background-size: 100% 100%;
+  width: 90vw;
+  overflow: hidden;
 }
 .part-title, .story{
     text-align: center;
@@ -215,5 +230,22 @@ section{
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@keyframes shaking-phone{
+  0%, 100%{
+    transform: translateX(0px);
+  }
+  1%, 9%, 17%{
+    transform: translateX(-4px);
+  } 
+  3%, 11%, 19%{
+    transform: translateX(0px);
+  }
+  5%, 13%, 21%{
+    transform: translateX(4px);
+  }
+  7%, 15%, 23%{
+    transform: translateX(0px);
   }
 }
