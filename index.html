@@ -47,8 +47,8 @@
             <div class="conversation-text reveal from-bottom">แล้วหนูมีแฟนหรือยัง?</div>
             <img class="part-1-panel reveal from-bottom" src="assets/img/part_1/PART1_01.png" alt="">
             <div class="choices-buttons-horizontal">
-                <button class="part-1-choice-button reveal from-left" onclick="contentGatesOne();answerShow(`.respond-1`,`.respond-2`)">มีแล้ว</button>
-                <button class="part-1-choice-button reveal from-right" onclick="contentGatesOne();answerShow(`.respond-2`,`.respond-1`)">ยังไม่มี</button>
+                <button class="part-1-choice-button reveal from-left" onclick="contentGates([5,6]);answerShow(`.respond-1`,`.respond-2`)">มีแล้ว</button>
+                <button class="part-1-choice-button reveal from-right" onclick="contentGates([5,6]);answerShow(`.respond-2`,`.respond-1`)">ยังไม่มี</button>
             </div>
         </div> 
     </section>
@@ -64,8 +64,8 @@
             <div class="conversation-text reveal from-bottom">แล้วหนูชอบผู้หญิงหรือผู้ชาย?</div>
             <img class="part-1-panel reveal from-bottom" src="assets/img/part_1/PART1_03.png" alt="">
             <div class="choices-buttons-horizontal">
-                <button class="part-1-choice-button reveal from-left" onclick="contentGatesTwo();answerShow(`.respond-3`,`.respond-4`)">ผู้หญิง</button>
-                <button class="part-1-choice-button reveal from-right" onclick="contentGatesTwo();answerShow(`.respond-4`,`.respond-3`)">ผู้ชาย</button>
+                <button class="part-1-choice-button reveal from-left" onclick="contentGates([7,8,9]);answerShow(`.respond-3`,`.respond-4`)">ผู้หญิง</button>
+                <button class="part-1-choice-button reveal from-right" onclick="contentGates([7,8,9]);answerShow(`.respond-4`,`.respond-3`)">ผู้ชาย</button>
             </div>
         </div> 
     </section>
@@ -75,6 +75,59 @@
             <div class="respond-3 panel-none reveal from-left">นิ้วเย็นๆ จะไปสู้เอ็นอุ่น ๆ ได้ไง</div>
             <div class="respond-4 panel-none reveal from-right">งั้นพี่ก็มีโอกาสใช่มั้ย</div>
         </div>  
+    </section>
+    <section id="part-1-section-8" class="monologue panel-none">
+        <div class="conversation-text reveal from-bottom">(....)</div>
+    </section>
+    <section id="part-1-section-9" class="monologue panel-none">
+        <div class="part-1-choice-container">
+            <div class="conversation-text reveal from-bottom">ฮึ แล้วคิดว่าตัวเองสวยมั้ย?</div>
+            <img class="part-1-panel reveal from-bottom" src="assets/img/part_1/PART1_05.png" alt="">
+            <div class="choices-buttons-horizontal">
+                <button class="part-1-choice-button reveal from-left" onclick="contentGates([10,11]);answerShow(`.respond-5`,`.respond-6`)">ธรรมดาแหละค่ะ</button>
+                <button class="part-1-choice-button reveal from-right" onclick="contentGates([10,11]);answerShow(`.respond-6`,`.respond-5`)">ไม่หรอกค่ะ</button>
+            </div>
+        </div> 
+    </section>
+    <section id="part-1-section-10" class="monologue panel-none">
+        <div class="part-1-respond-container">
+            <img class="part-1-panel reveal from-bottom" src="assets/img/part_1/PART1_06.png" alt="">
+            <div class="respond-6 panel-none reveal from-left">ไม่สวยอะไรล่ะ</div>
+            <div class="respond-5 panel-none reveal from-right">พี่ว่าเราสวยมากนะ</div>
+        </div>  
+    </section>
+    <section id="part-1-section-11" class="monologue panel-none">
+        <div class="part-1-choice-container">
+            <div class="conversation-text reveal from-bottom">แล้วดื่มเหล้าได้รึเปล่าน่ะเรา ?
+                บางทีการทำงานมันต้องมีเข้าสังคมนะ</div>
+            <img class="part-1-panel reveal from-bottom" src="assets/img/part_1/PART1_07.png" alt="">
+            <div class="choices-buttons-horizontal">
+                <button class="part-1-choice-button reveal from-left" onclick="contentGates([12,13,14])">มีบ้างค่ะ</button>
+                <button class="part-1-choice-button reveal from-right" onclick="contentGates([12,13,14])">ไม่ดื่มค่ะ แพ้แอลกอฮอล์</button>
+            </div>
+        </div> 
+    </section>
+    <section id="part-1-section-12" class="monologue panel-none">
+        <div class="conversation-text reveal from-bottom">ไม่เชื่อหรอก <br>พี่ว่าเราเที่ยวกลางคืนทุกวัน</div>
+        
+    </section>
+    <section id="part-1-section-13" class="monologue panel-none">
+        <div id="sec13-image-container" class="reveal from-bottom">
+            <img class="part-1-panel sec13-img-1" src="assets/img/part_1/PART1_08.png" alt="">
+            <img class="part-1-panel sec13-img-2" src="assets/img/part_1/PART1_13.png" alt=""><!-- bruh -->
+        </div>
+    </section>
+    <section id="part-1-section-14" class="monologue panel-none">
+        <div class="part-1-choice-container">
+            <div class="conversation-text reveal from-bottom">วันนี้แต่งตัวน่ารักดีนะ พี่ชอบ ปกติแต่งแบบนี้ทุกวันเลยมั้ย?</div>
+            <div class="choices-buttons-horizontal">
+                <button class="part-1-choice-button reveal from-bottom" onclick="contentGates([])">ขอบคุณค่ะ แต่งแบบนี้ปกติค่ะ</button>
+                <button class="part-1-choice-button reveal from-bottom" onclick="contentGates([])">ขอบคุณค่ะ ไม่ค่อยได้แต่งแบบนี้ค่ะ</button>
+            </div>
+        </div> 
+    </section>
+    <section id="part-1-section-15" class="monologue panel-none">
+        
     </section>
 </body>
 </html>

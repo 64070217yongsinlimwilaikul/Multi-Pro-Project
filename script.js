@@ -24,19 +24,11 @@ function answerShow(target,oppo) {
   oppo_panel.classList.remove("panel-show");
   oppo_panel.classList.add("panel-none");
 }
-  
-function contentGatesOne() {
-  document.querySelector('#part-1-section-5').classList.remove("panel-none");
-  document.querySelector('#part-1-section-5').classList.remove("panel-show");
 
-  document.querySelector('#part-1-section-6').classList.remove("panel-none");
-  document.querySelector('#part-1-section-6').classList.remove("panel-show");
-}
-
-function contentGatesTwo() {
-  document.querySelector('#part-1-section-7').classList.remove("panel-none");
-  document.querySelector('#part-1-section-7').classList.remove("panel-show");
-/*
-  document.querySelector('#part-1-section-8').classList.remove("panel-none");
-  document.querySelector('#part-1-section-8').classList.remove("panel-show");*/
+function contentGates(seclist) {
+  for (let i in seclist) {
+    /*console.log('#part-1-section-' + seclist[i])*/
+    document.querySelector('#part-1-section-' + seclist[i] ).classList.remove("panel-none");
+    document.querySelector('#part-1-section-' + seclist[i] ).classList.remove("panel-show");
+  }
 }

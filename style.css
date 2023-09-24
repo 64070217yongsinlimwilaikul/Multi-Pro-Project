@@ -67,6 +67,12 @@ body  {
     width: 50%;
 }
 
+.conversation-text{
+  /* this limit the text to only takes up 50% of the screen */
+  color: #FF3A21;
+  font-weight: bold;
+}
+
 /*stlyes concerning with part one,*/
 .part-1-conversation-text{
   /* orange text of the interviewer */
@@ -82,10 +88,11 @@ body  {
   width: 25%;
   height: 10vh;
   font-size: 20px;
+  padding: 10px;
   font-family: CSPrajad;
   color: var(--white);
   background-color: var(--red);
-  border-radius: 10px;
+  border-radius: 30px;
   border: none;
 }
 
@@ -173,6 +180,102 @@ body  {
   height: 100%;
   margin-bottom: 0vh;
 }
+#part-1-section-8{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-9{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-10{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-11{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+
+#part-1-section-12{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+
+#part-1-section-13{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 150%;
+  margin-bottom: 10vh;
+}
+
+#part-1-section-14{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+
+#part-1-section-15{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-16{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-17{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-18{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-19{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-20{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+
 
 
 /* related to fade to show gimmick */
@@ -285,4 +388,44 @@ body  {
   color: white;
   top: 40%;
   right: 15%;
+}
+
+.respond-5{
+  font-size: 30px;
+  width: 20%;
+  position: absolute;
+  color: white;
+  top: 42%;
+  right: 15%;
+}
+
+.respond-6{
+  font-size: 30px;
+  /**border: 2px solid black;**/
+  width: 20%;
+  position: absolute;
+  color: white;
+  top: 45%;
+  left: 17%;
+}
+
+.sec13-img-1{
+  position: relative;
+  width: 50%;
+  right: 15%;
+}
+
+.sec13-img-2{
+  position: relative;
+  width: 50%;
+  left: 10%;
+}
+
+#sec13-image-container{
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
 }
