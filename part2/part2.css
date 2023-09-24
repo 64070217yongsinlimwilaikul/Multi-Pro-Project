@@ -1,6 +1,10 @@
 @font-face { font-family: CSPrajad; src: url('../assets/fonts/CSPraJad\ v2.otf'); }
 @font-face { font-family: CSPrajadBold; src: url('../assets/fonts/CSPraJad-bold\ v2.otf'); }
 
+::selection{
+  background-color: pink;
+  color: white;
+}
 *{
     box-sizing: border-box;
     font-family: CSPrajad;
@@ -70,29 +74,21 @@ section{
     align-items: center;  /* ทำไว้เพราะ section 8 อยากให้ตัวอักษรที่อยู่ข้างๆรูปอยู่ตรงกลาง */
 }
 #img-1{
-    width: 100%; /* width ของรูปแรกที่ฝากสอนงานน้อง */
+  width: 70vw; /* width ของรูปแรกที่ฝากสอนงานน้อง */
 }
 #no-book{
   height: 32.3vw; /* ภาพกองหนังสืออันแรกที่ยังไม่มีหนังสือภาพมันไม่เท่ากับอันอื่น */
-  margin-left: -15vw;
 }
 #phone{
-  transform: scale(1.2, 1.2);
-}
-.phone-shake{
+  transform: scale(1.4, 1.4);
+  position: relative;
+  width: 30vw;
   animation: shaking-phone 1.5s ease-in infinite;
 }
 .book{
   width: auto;
   height: 34vw;
   margin-right: 2rem; /* class ของรูปกองหนังสือที่เพิ่มขึ้นเรื่อยๆ กำหนดความสูง responsive กับความกว้าง และ ความห่างกับตัวอักษร ตอนหน้าจอ < 960px */
-}
-.book0, .books{
-  margin-right: 1.5rem;
-}
-
-.book0{
-  margin-left: -17.3vw;
 }
 #phone-background{
   background-image: url(../assets/img/PART2/PART2_5\(croped\).png);
@@ -102,7 +98,10 @@ section{
 }
 
 .text{
-    font-size: 3vw; /* class ของข้อความที่ปรากฎบนหน้าจอไม่ใช่ในกรอบคำพูด */
+  font-size: 3vw; /* class ของข้อความที่ปรากฎบนหน้าจอไม่ใช่ในกรอบคำพูด */
+}
+.text-details{
+  font-size: 2.5vw;
 }
 .word-bubble{
     height: 100%; /* ถ้าใช้ % จะอิงจาก div แม่ ซึ่ง divแม่จะมีขนาดเท่ากับเนื้อหา เช่นรูป สามารถใช้ vw เพื่อง่ายต่อการทำ responsive ได้ */
@@ -114,8 +113,13 @@ section{
     padding: 0 1rem 0 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 1.3rem; /* กรอบคำพูด */
+    justify-content: center;/* กรอบคำพูด */
+}
+.words{
+  font-size: 1.3rem;
+}
+.words-bigger{
+  font-size: 1.5rem;
 }
 #word-buble-1{
     margin: auto;
@@ -123,11 +127,28 @@ section{
     right:0;
     bottom: -80%; /* ปรับตำแหน่งของกรอบคำพูดอันแรก ซึ่ง div แม่ขนาดเท่ารูป รูปจึงเปรียบเสมือน parent ที่ไว้ใช้ ref*/
 }
-
+#button-phone{
+  width: 25vw;
+  height: 8rem;
+  background-color: #D9D9D9;
+  border-radius: 100px;
+  margin-top: 5rem;
+  animation: shaking 1.5s ease-in infinite;
+  cursor: pointer;
+}
+#button-phone:hover{
+  background-color: #AEAEAE;
+}
 
 /* ในส่วนของข้างล่างจะเป็น อารมณ์คล้ายๆ frame work นั่นแหละ */
 
 /* gradient */
+.hide{
+  opacity: 0;
+}
+.bold{
+  font-weight: bold;
+}
 .blue-to-red-gra{
     background: linear-gradient(180deg, var(--blue) 0%, var(--red) 100%);
     width: 100%;
@@ -152,18 +173,26 @@ section{
   .part-name{
       font-size: 10vw; /* ปรับให้ข้อความชื่อ part ใหญ่ขึ้นหน่อยเพราะดูเล็กเกินเวลาหน้าจอเล็ก*/
   }
+  #img-1{
+    width: 95vw;
+  }
   .text{
     font-size: 4.5vw;
   }
-  .word-bubble{
+  .text-details{
+    font-size: 4vw;
+  }
+  .words{
     font-size: 2.5vw;
+  }
+  .words-bigger{
+    font-size: 2.8vw;
   }
   .book{
     height: 54vw;
   }
   #no-book{
     height: 51vw;
-    margin-left: -25vw;
   /* ภาพกองหนังสืออันแรกที่ยังไม่มีหนังสือภาพมันไม่เท่ากับอันอื่น ตอนหน้าจอ < 960px*/
   }
   .book0{
@@ -238,6 +267,23 @@ section{
   }
 }
 @keyframes shaking-phone{
+  0%, 100%{
+    transform: translateX(0px) scale(1.4, 1.4);
+  }
+  1%, 9%, 17%{
+    transform: translateX(-4px scale(1.4, 1.4));
+  } 
+  3%, 11%, 19%{
+    transform: translateX(0px) scale(1.4, 1.4);
+  }
+  5%, 13%, 21%{
+    transform: translateX(4px) scale(1.4, 1.4);
+  }
+  7%, 15%, 23%{
+    transform: translateX(0px) scale(1.4, 1.4);
+  }
+}
+@keyframes shaking{
   0%, 100%{
     transform: translateX(0px);
   }
