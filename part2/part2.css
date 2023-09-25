@@ -67,6 +67,7 @@ section{
 }
 #section-13{
   max-height: 70vw;
+  position: relative;
 }
 .story-details{
     display: flex;
@@ -149,6 +150,26 @@ section{
 }
 #button-phone:hover{
   background-color: #AEAEAE;
+}
+.button-to-part1{
+  display: block;
+  background-image: url(../assets/img/PART2/Back-to-part1.png);
+  background-size: cover;
+  width: 5vw;
+  height: 5vw;
+  bottom: 5%;
+  position: absolute;
+  left: 5%;
+}
+.button-to-part3{
+  display: block;
+  background-image: url(../assets/img/PART2/Go-to-part3.png);
+  background-size: cover;
+  width: 5vw;
+  height: 5vw;
+  bottom: 5%;
+  position: absolute;
+  right: 5%;
 }
 
 /* ในส่วนของข้างล่างจะเป็น อารมณ์คล้ายๆ frame work นั่นแหละ */
