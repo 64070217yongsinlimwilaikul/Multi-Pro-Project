@@ -30,7 +30,7 @@ function scrollToID(ID) { document.querySelector('#part-1-section-' + ID).scroll
 function contentGates(seclist) {
   for (let i in seclist) {
     /*console.log('#part-1-section-' + seclist[i])*/
-    document.querySelector('#part-1-section-' + seclist[i] ).classList.remove("panel-none");
-    document.querySelector('#part-1-section-' + seclist[i] ).classList.remove("panel-show");
+    document.querySelector('#part-3-section-' + seclist[i] ).classList.remove("panel-none");
+    document.querySelector('#part-3-section-' + seclist[i] ).classList.remove("panel-show");
   }
 }
