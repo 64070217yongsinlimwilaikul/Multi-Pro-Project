@@ -1,0 +1,299 @@
+:root {
+    --blue: #001B7C;
+    --red: #FF3A21;
+    --white: #ffffff;
+}
+
+@font-face { font-family: CSPrajad; src: url('assets/fonts/CSPraJad\ v2.otf'); }
+@font-face { font-family: CSPrajadBold; src: url('assets/fonts/CSPraJad-bold\ v2.otf'); } 
+
+body  {
+    font-family: CSPrajad;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* gradient */
+.blue-to-white-gra{
+    background: linear-gradient(180deg, var(--blue) 0%, var(--white) 100%);
+    width: 100%;
+    height: 100%;
+}
+.white-to-grey-gra{
+  background: linear-gradient(180deg, var(--white) 0%, var(--grey) 100%);
+  width: 100%;
+  height: 100%;
+}
+/*I will just call it title*/
+.part-title{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.part-number{
+  color: white;
+  font-size: 60px;
+  font-family:  'Pridi', serif;
+  /*position: relative;
+  top: 45%;*/
+}
+.part-name{
+  color: var(--red);
+  font-size: 100px;
+  font-family:  'Pridi', serif;
+  /*text-align: center;
+  position: relative;
+  top: 48%;*/
+}
+.monologue{
+    /* for text that white text in the middle of screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: black; 
+}
+.monologue-text{
+    /* this limit the text to only takes up 50% of the screen */
+    width: 50%;
+}
+
+.before-twist-text{
+  /* this limit the text to only takes up 50% of the screen */
+  width: 50%;
+  left: 10%;
+}
+
+.twist-text{
+  /* this limit the text to only takes up 50% of the screen */
+  color: #b00000;
+  font-weight: bold;
+  width: 20%;
+  position: absolute;
+  top: 10%;
+  right: 25%;
+}
+
+.bottom-text{
+  /* this limit the text to only takes up 50% of the screen */
+  color: #000000;
+  width: 20%;
+  position: absolute;
+  top: 10%;
+  right: 25%;
+  gap: .5px;
+}
+.friend-conversation-text{
+  /* this limit the text to only takes up 50% of the screen */
+  color: #000000;
+  box-sizing: border-box;
+  width: 50%;
+  height: 50%;
+  padding: 30px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+/*stlyes concerning with part one,*/
+.part-3-conversation-text{
+  /* orange text of the interviewer */
+    color: var(--red);
+    font-weight: bold;
+}
+.part-3-panel{
+  margin-top: 3vh;
+  width: 80%;
+}
+.part-3-choice-button{
+  margin: 4vh 10vh 0vh 10vh;
+  width: 25%;
+  height: 10vh;
+  font-size: 20px;
+  padding: 10px;
+  font-family: CSPrajad;
+  color: var(--white);
+  background-color: var(--red);
+  border-radius: 30px;
+  border: none;
+}
+#part-0-section-4{
+  /*Chapter Title*/
+  background-color: var(--blue);
+  width: 100%;
+  height: 200%;
+}
+#part-3-section-1{
+    /*Strang question?*/
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+}
+#part-3-section-2{
+    /*I can def pass the interbiew*/
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+}
+#part-3-section-3{
+    /*Until....*/
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+}
+#part-3-section-4{
+  /*I can def pass the interbiew*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+}
+#part-3-section-5{
+  /*I can def pass the interbiew*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+}
+#part-3-section-6{
+  /*I can def pass the interbiew*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  gap: .5px;
+}
+#part-3-section-7{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 200%;
+  margin-bottom: 50px;
+  align-items: end;
+}
+#part-3-section-8{
+  background-color: var(--white);
+  margin-bottom: 50px;
+  width: 100%;
+  height: 50%;
+}
+
+#part-3-section-9{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+}
+/* related to fade to show gimmick */
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+.reveal.active {
+  opacity: 1;
+}
+.active.from-bottom {
+  animation: fade-bottom 0.5s ease-in;
+}
+.active.from-top {
+  animation: fade-top 0.5s ease-in;
+}
+.active.from-left {
+  animation: fade-left 0.5s ease-in;
+}
+.active.from-right {
+  animation: fade-right 0.5s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-top {
+  /* this looks really weird but it's here*/
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.panel-none{
+  display: none;
+}
+.panel-show{
+  display:block;
+}
+
+.part-3-respond-container{
+  position: relative;
+}
+.respond-1{
+  color: #000000;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+  padding: 30px;
+  border: 2px solid rgb(0, 0, 0);
+}
+.respond-2{
+  color: #000000;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+  padding: 40px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.sec2-img-1{
+  position: relative;
+  width: 40%;
+}
+
+.sec13-img-1{
+  position: relative;
+  width: 50%;
+  right: 15%;
+}
+
+.sec13-img-2{
+  position: relative;
+  width: 50%;
+  left: 10%;
+}
+
+#sec13-image-container{
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
