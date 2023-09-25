@@ -115,6 +115,10 @@ section{
     align-items: center;
     justify-content: center;/* กรอบคำพูด */
 }
+#section-16 .word-bubble{
+  width: 40%;
+  height: 80%;
+}
 .words{
   font-size: 1.3rem;
 }
@@ -126,6 +130,13 @@ section{
     left: 0;
     right:0;
     bottom: -80%; /* ปรับตำแหน่งของกรอบคำพูดอันแรก ซึ่ง div แม่ขนาดเท่ารูป รูปจึงเปรียบเสมือน parent ที่ไว้ใช้ ref*/
+}
+#word-buble-2{
+  margin: auto;
+  left: 0;
+  right:0;
+  bottom: 80%; /* ปรับตำแหน่งของกรอบคำพูดอันแรก ซึ่ง div แม่ขนาดเท่ารูป รูปจึงเปรียบเสมือน parent ที่ไว้ใช้ ref*/
+  left: -40%;
 }
 #button-phone{
   width: 25vw;
@@ -200,6 +211,9 @@ section{
   }
   .img-vertical{
     width: 50vw;
+  }
+  #button-phone{
+    width: 40vw;
   }
 }
 /* related to fade to show gimmick */
