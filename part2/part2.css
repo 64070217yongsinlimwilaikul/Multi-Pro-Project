@@ -99,7 +99,7 @@ section{
 }
 
 .text{
-  font-size: 3vw; /* class ของข้อความที่ปรากฎบนหน้าจอไม่ใช่ในกรอบคำพูด */
+  font-size: 3.5vw; /* class ของข้อความที่ปรากฎบนหน้าจอไม่ใช่ในกรอบคำพูด */
 }
 .text-details{
   font-size: 2.5vw;
@@ -117,8 +117,12 @@ section{
     justify-content: center;/* กรอบคำพูด */
 }
 #section-16 .word-bubble{
-  width: 40%;
-  height: 80%;
+  width: 30%; /* ปรับขนาดสำหรับ section-16 */
+  height: 50%;
+}
+#section-17 .word-bubble{
+  width: 30%; /* ปรับขนาดสำหรับ section-16 */
+  height: 88%;
 }
 .words{
   font-size: 1.3rem;
@@ -138,6 +142,13 @@ section{
   right:0;
   bottom: 80%; /* ปรับตำแหน่งของกรอบคำพูดอันแรก ซึ่ง div แม่ขนาดเท่ารูป รูปจึงเปรียบเสมือน parent ที่ไว้ใช้ ref*/
   left: -40%;
+}
+#word-buble-3{
+  margin: auto;
+  left: 0;
+  right:0;
+  bottom: 80%; /* ตำแหน่งสำหรับ section 16 */
+  left: 40%;
 }
 #button-phone{
   width: 25vw;
