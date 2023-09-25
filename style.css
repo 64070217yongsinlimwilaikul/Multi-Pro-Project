@@ -237,15 +237,16 @@ body  {
   /*Until....*/
   background-color: var(--white);
   width: 100%;
-  height: 100%;
+  height: 150%;
   margin-bottom: 0vh;
 }
 #part-1-section-16{
   /*Until....*/
   background-color: var(--white);
   width: 100%;
-  height: 100%;
-  margin-bottom: 0vh;
+  height: 200%;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
 }
 #part-1-section-17{
   /*Until....*/
@@ -258,14 +259,15 @@ body  {
   /*Until....*/
   background-color: var(--white);
   width: 100%;
-  height: 100%;
-  margin-bottom: 0vh;
+  height: 200%;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
 }
 #part-1-section-19{
   /*Until....*/
   background-color: var(--white);
   width: 100%;
-  height: 100%;
+  height: 300%;
   margin-bottom: 0vh;
 }
 #part-1-section-20{
@@ -275,7 +277,27 @@ body  {
   height: 100%;
   margin-bottom: 0vh;
 }
-
+#part-1-section-21{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-22{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-23{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
 
 
 /* related to fade to show gimmick */
@@ -420,8 +442,35 @@ body  {
   width: 50%;
   left: 10%;
 }
+.sec16-img-1{
+  position: relative;
+  width: 50%;
+  right: 15%;
+}
 
-#sec13-image-container{
+.sec16-img-2{
+  position: relative;
+  width: 45%;
+  left: 10%;
+}
+.sec18-img-1{
+  position: relative;
+  width: 70%;
+}
+
+.sec18-img-2{
+  position: relative;
+  width: 45%;
+  right: 10%;
+  
+}
+.sec18-img-3{
+  position: relative;
+  width: 45%;
+  left: 20%;
+}
+
+.image-container{
   display: flex;
   gap: 2em;
   flex-direction: column;
