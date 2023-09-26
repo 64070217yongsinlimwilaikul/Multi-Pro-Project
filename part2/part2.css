@@ -259,7 +259,7 @@ section{
     width: 40vw;
   }
   #employee-img{
-    width: 90vw;
+    width: 90vw !important;
   }
 }
 @media screen and (width < 500px) {
