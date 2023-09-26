@@ -64,7 +64,7 @@ section{
 #section-2{
   height: 200%; /* ความยาวของหน้า "ฉันทำงานมา 5 ปีแล้ว" */
 }
-#section-11, #section-12, #section-13, #section-22, #section-23{
+#section-11, #section-12, #section-13, #section-22, #section-23, .bias{
   flex-direction: column;
   gap: 2rem; /* section 11 ให้รูปกับข้อความอยู่คนละบรรทัด + กับเว้นช่องว่างระหว่างกัน */
 }
@@ -80,7 +80,7 @@ section{
 #section-17{
   height: 150% !important;
 }
-#section-22 .text, #section-23 .text{
+#section-22 .text, #section-23 .text, #section-33 .text{
   color: #D4145A;
 }
 .final-section{
@@ -145,6 +145,10 @@ section{
   width: 43%; /* ปรับขนาดสำหรับ section-24 */
   height: 50%;
 }
+#section-30 .text{
+  border: solid;
+  padding: 1.8rem;
+}
 .q{
   display: flex;
   gap: 2rem;
@@ -161,6 +165,12 @@ section{
 }
 .button-ans:hover{
   background-color: #a1073f;
+}
+.bias-header{
+  color: #D4145A;
+}
+.bias-text{
+  font-size: 3.8vw !important;
 }
 .words{
   font-size: 1.7vw;
