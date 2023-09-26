@@ -37,6 +37,14 @@ body  {
   background: linear-gradient(180deg, var(--white) 0%, var(--blue) 100%);
   width: 100%;
   height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.white-to-blue-gra{
+  background: linear-gradient(180deg, var(--white) 0%, var(--blue) 100%);
+  width: 100%;
+  height: 100%;
 }
 
 /* i have no idea what to categorize this*/
@@ -49,12 +57,14 @@ body  {
 .part-number{
     color: white;
     font-size: 5vw;
+    font-size: 5vw;
     font-family:  'Pridi', serif;
     /*position: relative;
     top: 45%;*/
 }
 .part-name{
     color: var(--red);
+    font-size: 7vw;
     font-size: 7vw;
     font-family:  'Pridi', serif;
     /*text-align: center;
@@ -68,6 +78,7 @@ body  {
     align-items: center;
     text-align: center;
     font-size: 35px;
+    font-size: 3.5vw;
     color: black; 
 }
 .monologue-text{
@@ -97,11 +108,21 @@ body  {
   width: 70%;
   text-align: center;
 }
+
+.logo_image{
+  margin-top: 3vh;
+  width: 100%;
+  text-align: center;
+}
 .part-1-choice-button{
   margin: 4vh 10vh 0vh 10vh;
   width: 30%;
   height: 15vh;
   font-size: 30px;
+  padding: 1vw;
+  width: 30%;
+  height: 15vh;
+  font-size: 1.5vw;
   padding: 1vw;
   font-family: CSPrajad;
   color: var(--white);
@@ -114,16 +135,12 @@ body  {
 .part-1-choice-button:hover{
   background-color: var(--red-hover);
 }
-.part-1-choice-button:hover{
-  background-color: var(--red-select);
-
-}
 @media screen and (max-width: 780px) {
   .part-1-choice-button{
     margin: 4vh 10vh 0vh 10vh;
     width: 30%;
     height: 10vh;
-    font-size: 20px;
+    font-size: 3.5vw;
     padding: 1vw;
     font-family: CSPrajad;
     color: var(--white);
@@ -141,31 +158,18 @@ body  {
     color: black; 
 }
 }
-@media screen and (max-width: 500px) {
-  .part-1-choice-button{
-    margin: 4vh 10vh 0vh 10vh;
-    width: 30%;
-    height: 10vh;
-    font-size: 15px;
-    padding: 1vw;
-    font-family: CSPrajad;
-    color: var(--white);
-    background-color: var(--red);
-    border-radius: 30px;
-    border: none;
-  }
-}
-
 
 .word-bubble{
   height: 60%; /* ถ้าใช้ % จะอิงจาก div แม่ ซึ่ง divแม่จะมีขนาดเท่ากับเนื้อหา เช่นรูป สามารถใช้ vw เพื่อง่ายต่อการทำ responsive ได้ */
   width: 25%;
   border: 1px solid black;
+  position: absolute;
   background-color: white;
   border-radius: 50%;
   padding: 0 1rem 0 1rem;
-  align-items: center !important; 
-  justify-content: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 999;/* กรอบคำพูด */
 }
 
@@ -226,6 +230,7 @@ body  {
   width: 100%;
   height: 200%;
   margin-bottom: 15vh;
+  margin-bottom: 15vh;
   align-items: end;
 }
 #part-1-section-5{
@@ -238,6 +243,7 @@ body  {
   background-color: var(--white);
   width: 100%;
   height: 100%;
+  margin-bottom: 10vh;
   margin-bottom: 10vh;
   align-items: end;
 }
@@ -277,12 +283,14 @@ body  {
   width: 100%;
   height: 100%;
   margin-bottom: 100vh;
+  margin-bottom: 100vh;
 }
 
 #part-1-section-13{
   background-color: var(--white);
   width: 100%;
   height: 150%;
+  margin-bottom: 30vh;
   margin-bottom: 30vh;
 }
 
@@ -310,6 +318,7 @@ body  {
   background-color: var(--white);
   width: 100%;
   height: 100%;
+  margin-bottom: 100vh;
   margin-bottom: 100vh;
 }
 #part-1-section-18{
@@ -429,56 +438,97 @@ body  {
 .respond-1{
   font-size: 35px;
   width: 23%;
+  font-size: 2vw;
+  width: 23%;
   position: absolute;
   color: black;
   top: 41%;
   left: 8%;
+
+}
+#span-bubble-1{
+  display: flex;
+  position: absolute;
+  color: black;
+  top: 41%;
+  left: 8%;
+  top: 45%;
+  left: 25%;
 }
 
 .respond-2{
   margin: auto;
   font-size: 35px;
+  margin: auto;
+  font-size: 2vw;
   /**border: 2px solid black;**/
+  width: 18%;
   width: 18%;
   position: absolute;
   color: black;
   top: 11%;
   right: 11%;
 }
+#span-bubble-2{
+  margin: auto;
+  position: absolute;
+  color: black;
+  top: 11%;
+  right: 11%;
+  top: 42%;
+  left: 37%;
+}
 
 .respond-3{
   font-size: 35px;
   width: 43%;
   height: 90%;
+  font-size: 3vw;
+  width: 60%;
   position: absolute;
   color: black;
   top: 80%;
   left: 0%;
+  color: black;
+  top: 60%;
+  left: 7%;
 }
 
 .respond-4{
   font-size: 35px;
+  font-size: 3vw;
   /**border: 2px solid black;**/
+  width: 40%;
   width: 40%;
   position: absolute;
   color: black;
   top: 31%;
   right: 0%;
+  color: black;
+  top: 31%;
+  right: 7%;
 }
 
 .respond-5{
   font-size: 35px;
   width: 40%;
+  font-size: 3vw;
+  width: 60%;
   position: absolute;
   color: black;
   top: 75%;
+  left: 0%;
+  color: black;
+  top: 55%;
   left: 0%;
 }
 
 .respond-6{
   font-size: 35px;
+  font-size: 3vw;
   /**border: 2px solid black;**/
   width: 30%;
+  width: 40%;
   position: absolute;
   color: black;
   top: 65%;
@@ -627,10 +677,16 @@ body  {
     margin-bottom: 30px;
   }
   
+  color: black;
+  top: 45%;
+  right: 7%;
 }
+
+
 
 .sec13-img-1{
   position: relative;
+  width: 80%;
   width: 80%;
   right: 15%;
 }
@@ -638,10 +694,12 @@ body  {
 .sec13-img-2{
   position: relative;
   width: 80%;
+  width: 80%;
   left: 10%;
 }
 .sec16-img-1{
   position: relative;
+  width: 80%;
   width: 80%;
   right: 15%;
 }
@@ -649,21 +707,25 @@ body  {
 .sec16-img-2{
   position: relative;
   width: 80%;
+  width: 80%;
   left: 10%;
 }
 .sec18-img-1{
   position: relative;
+  width: 80%;
   width: 80%;
 }
 
 .sec18-img-2{
   position: relative;
   width: 80%;
+  width: 80%;
   right: 10%;
   
 }
 .sec18-img-3{
   position: relative;
+  width: 80%;
   width: 80%;
   left: 20%;
 }
@@ -686,6 +748,8 @@ body  {
   display: block;
   background-image: url(./assets/img/part_1/button-to-part2.png);
   background-size: cover;
+  width: 10vw;
+  height: 10vw;
   width: 10vw;
   height: 10vw;
   bottom: 5%;
