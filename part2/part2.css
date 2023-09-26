@@ -65,6 +65,9 @@ section{
   flex-direction: column;
   gap: 2rem; /* section 11 ให้รูปกับข้อความอยู่คนละบรรทัด + กับเว้นช่องว่างระหว่างกัน */
 }
+#section-12{
+  height: 150% !important;
+}
 #section-13{
   position: relative;
 }
@@ -73,6 +76,9 @@ section{
 }
 #section-17{
   height: 150% !important;
+}
+.final-section{
+  position: relative;
 }
 .story-details{
     display: flex;
