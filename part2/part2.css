@@ -259,6 +259,9 @@ section{
   #button-phone{
     width: 40vw;
   }
+  #employee-img{
+    width: 90vw;
+  }
 }
 @media screen and (width < 500px) {
   #phone-background{
