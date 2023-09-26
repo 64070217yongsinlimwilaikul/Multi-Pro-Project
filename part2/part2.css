@@ -35,6 +35,9 @@ section{
 .img-vertical{
   width: 30vw; /* ขนาดรูปที่ยาวแนวตั้ง ตอนหน้าจอ < 960px*/
 }
+.img-1-q{
+  width: 90vw;
+}
 
 /* จบ ต่อไปไม่ต้องรู้ก็ได้ */
 
@@ -61,7 +64,7 @@ section{
 #section-2{
   height: 200%; /* ความยาวของหน้า "ฉันทำงานมา 5 ปีแล้ว" */
 }
-#section-11, #section-12, #section-13{
+#section-11, #section-12, #section-13, #section-22, #section-23{
   flex-direction: column;
   gap: 2rem; /* section 11 ให้รูปกับข้อความอยู่คนละบรรทัด + กับเว้นช่องว่างระหว่างกัน */
 }
@@ -76,6 +79,9 @@ section{
 }
 #section-17{
   height: 150% !important;
+}
+#section-22 .text, #section-23 .text{
+  color: #D4145A;
 }
 .final-section{
   position: relative;
@@ -132,8 +138,29 @@ section{
   height: 45%;
 }
 #section-17 .word-bubble{
-  width: 28%; /* ปรับขนาดสำหรับ section-16 */
+  width: 28%; /* ปรับขนาดสำหรับ section-17 */
   height: 80%;
+}
+#section-24 .word-bubble{
+  width: 43%; /* ปรับขนาดสำหรับ section-24 */
+  height: 50%;
+}
+.q{
+  display: flex;
+  gap: 2rem;
+}
+.button-ans{
+  width: 35vw;
+  height: 10vh;
+  padding: 1rem;
+  border-radius: 100px;
+  background-color: #D4145A;
+  color: var(--white);
+  transition: all .13s;
+  cursor: pointer;
+}
+.button-ans:hover{
+  background-color: #a1073f;
 }
 .words{
   font-size: 1.7vw;
@@ -149,17 +176,21 @@ section{
 }
 #word-buble-2{
   margin: auto;
-  left: 0;
-  right:0;
-  bottom: 80%; /* ปรับตำแหน่งของกรอบคำพูดอันแรก ซึ่ง div แม่ขนาดเท่ารูป รูปจึงเปรียบเสมือน parent ที่ไว้ใช้ ref*/
   left: -40%;
+  right:0;
+  bottom: 80%; /* ตำแหน่งสำหรับ section 16 */
 }
 #word-buble-3{
   margin: auto;
-  left: 0;
-  right:0;
-  bottom: 80%; /* ตำแหน่งสำหรับ section 16 */
   left: 40%;
+  right:0;
+  bottom: 80%; /* ตำแหน่งสำหรับ section 17 */
+}
+#word-buble-4{
+  margin: auto;
+  left: -80%;
+  right:0;
+  bottom: 70%; /* ตำแหน่งสำหรับ section 24 */
 }
 #button-phone{
   width: 25vw;
