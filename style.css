@@ -1,6 +1,7 @@
 :root {
     --blue: #001B7C;
     --red: #FF3A21;
+    --red-hover: #B9210E;
     --white: #ffffff;
 }
 
@@ -75,7 +76,7 @@ body  {
 
 .conversation-text{
   /* this limit the text to only takes up 50% of the screen */
-  color: #FF3A21;
+  color: var(--red);
   font-weight: bold;
 }
 
@@ -106,6 +107,11 @@ body  {
   background-color: var(--red);
   border-radius: 30px;
   border: none;
+  transition: all .12s;
+  cursor: pointer;
+}
+.part-1-choice-button:hover{
+  background-color: var(--red-hover);
 }
 @media screen and (max-width: 780px) {
   .part-1-choice-button{
@@ -144,7 +150,6 @@ body  {
   justify-content: center;
   z-index: 999;/* กรอบคำพูด */
 }
-
 
 /* PART ONE INTERVIEW's sections */
 /* อาจจะเปลือง css หน่อยแต่ถ้าทำอย่างนี้คิดว่าน่าจะ implement scroll animation กับ funny gimmick ได้ง่ายกว่า */
