@@ -1,0 +1,178 @@
+@font-face { font-family: CSPrajad; src: url('../assets/fonts/CSPraJad\ v2.otf'); }
+@font-face { font-family: CSPrajadBold; src: url('../assets/fonts/CSPraJad-bold\ v2.otf'); }
+
+/* Root */
+:root {
+    --blue: #001B7C;
+    --red: #FF3A21;
+    --white: #ffffff;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: CSPrajad;
+    text-decoration: none;
+    transition: transform .5s;
+}
+
+html,body{margin: 0; padding: 0;scroll-behavior: smooth;}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.none{display: none;}
+
+/* Section */
+.part-number{
+    color: var(--white);
+    font-size: 4vw;
+    font-family:  'Pridi', serif;
+  }
+.part-name{
+    color: var(--red);
+    font-size: 7vw;
+    font-family:  'Pridi', serif;
+}
+.part-title{
+    background-color: var(--blue);
+    height: 100%;
+}
+
+.blue-to-white-gra{background: linear-gradient(180deg, var(--blue) 0%, var(--white) 100%);}
+.text{font-size: 3vw;}
+.responseText{font-size: 2.5vw;}
+.circleText{font-size: 1.8vw;}
+
+.choices-grid-1{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 20px;
+    padding: 1vh;
+}
+.choices-button-1{
+    height: 10vh;
+    font-size: 20px;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 30px;
+    border: none;
+}
+
+.response{
+    color: #000000;
+    box-sizing: border-box;
+    width: 50vw;
+    height: auto;
+    padding: 30px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.circle{
+    position: absolute;
+    height: 45%;
+    width: 14%;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--white);
+    z-index: 10;
+}
+
+#circle-1 {left: 10%; margin-top: -10%;}
+#circle-2 {right: 12%; margin-top: -16%; height: 60%; width: 16%;}
+#circle-3 {left: 20%; margin-top: -10%; height: 35%; width: 11%;}
+#circle-4 {right: 10%; margin-top: -10%;}
+
+/*Specific Section*/
+#section-3{height: 150%;}
+#section-8{height: 150%;}
+#section-12{height: 150%;}
+#section-15{height: 150%;}
+#section-18{height: 150%;}
+
+/*Image*/
+#img-1 {width: 80%;}
+#img-2 {width: 100%;}
+#img-3 {width: 100%;}
+#img-4 {width: 60%; margin-left: -30vw;}
+#img-5 {width: 60%; margin-left: 30vw;}
+#img-6 {width: 100%;}
+
+/* Animation */
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+.revealAbsolute {opacity: 1;}
+.reveal.active {opacity: 1;}
+.active.from-bottom {animation: fade-bottom 0.5s ease-in;}
+.active.from-top {animation: fade-top 0.5s ease-in;}
+.active.from-left {animation: fade-left 0.5s ease-in;}
+.active.from-right {animation: fade-right 0.5s ease-in;}
+
+@keyframes fade-bottom {
+    0% {transform: translateY(50px);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1;}
+}
+@keyframes fade-top {
+    0% {transform: translateY(-100px);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1;}
+}
+@keyframes fade-left {
+    0% {transform: translateX(-100px);opacity: 0;}
+    100% {transform: translateX(0);opacity: 1;}
+}
+@keyframes fade-right {
+    0% {transform: translateX(100px);opacity: 0;}
+    100% {transform: translateX(0);opacity: 1;}
+}
+
+/* responsive */
+@media screen and (width < 960px) {
+    section{height: 70%;}
+    .part-number{font-size: 9vw;}
+    .part-name{font-size: 12vw;}
+    .text{font-size: 6vw;}
+    .choices-button-1{font-size: 25px;}
+    .response{width: 90%; font-size: 5vw;}
+    .responseText{font-size: 5.5vw;}
+
+    #section-3{height: 100%;}
+    #section-8{height: 100%;}
+    #section-12{height: 100%;}
+    #section-15{height: 100%;}
+
+    #img-1 {width: 60%;}
+    #img-2 {width: 75%;}
+}
+
+@media screen and (width < 640px){
+    section{height: 50%;}
+    #img-1 {width: 75%;}
+
+    .choices-grid-1{
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 80vw;
+        justify-content: center;
+        row-gap: 20px;
+        padding: 1vh;
+    }
+    .choices-button-1{height: 8vh; font-size: 20px;}
+}
+
+@media screen and (width < 440px){
+    #img-1 {width: 100%;}
+    #img-2 {width: 100%;}
+}
