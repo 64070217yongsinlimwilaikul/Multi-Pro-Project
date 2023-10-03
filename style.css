@@ -91,6 +91,7 @@ body  {
   top: 10%;
   right: 25%;
   gap: .5px;
+  
 }
 .friend-conversation-text{
   /* this limit the text to only takes up 50% of the screen */
@@ -100,6 +101,59 @@ body  {
   height: 50%;
   padding: 30px;
   border: 2px solid rgb(0, 0, 0);
+}
+/*stole some of these to told this is bubble zone*/
+.bubble-1-text{
+  color: #000000;
+  background-color: white;
+  box-sizing: border-box;
+  width: 13%;
+  height: 18%;
+  padding-top: 150px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 80%;
+  position: absolute;
+  top: -370px;
+  left: 48%;
+}
+.bubble-2-text{
+  color: #000000;
+  background-color: white;
+  box-sizing: border-box;
+  width: 13%;
+  height: 18%;
+  padding-top: 130px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 80%;
+  position: absolute;
+  top: -320px;
+  left: 68%;
+}
+.bubble-3-text{
+  color: #000000;
+  background-color: white;
+  box-sizing: border-box;
+  width: 10%;
+  height: 14%;
+  padding-top: 100px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 80%;
+  position: absolute;
+  top: 1%;
+  left: 34%;
+}
+.bubble-4-text{
+  color: #000000;
+  background-color: white;
+  box-sizing: border-box;
+  width: 10%;
+  height: 14%;
+  padding-top: 80px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 80%;
+  position: absolute;
+  top: 11%;
+  left: 40%;
 }
 
 /*stlyes concerning with part one,*/
@@ -337,15 +391,50 @@ body  {
   /*Until....*/
   background-color: var(--white);
   width: 100%;
-  height: 100%;
+  height: 200%;
 }
 
 #part-3-section-10{
+  position: relative;
+  background-color: var(--white);
+  width: 125%;
+  height: 220%;
+  right: 60px;
+  margin: -38%;
+}
+#part-3-section-11{
   background-color: var(--white);
   width: 100%;
   height: 200%;
 }
-
+#part-3-section-12{
+  background-color: var(--white);
+  width: 100%;
+  height: 200%;
+}
+#part-3-section-13{
+  background-color: var(--white);
+  width: 100%;
+  height: 200%;
+}
+#part-3-section-14{
+  background-color: var(--white);
+  width: 100%;
+  height: 200%;
+}
+#part-3-section-15{
+  background-color: var(--white);
+  width: 100%;
+  height: 200%;
+}
+#part-3-section-16{
+  /*Until....*/
+  background-color: var(--white);
+  width: 100%;
+  height: 200%;
+  margin-bottom: 50px;
+  align-items: end;
+}
 /* related to fade to show gimmick */
 .reveal {
     position: relative;
@@ -456,6 +545,14 @@ body  {
   top: 40%;
   right: 15%;
 }
+.respond-3{
+  color: #000000;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+  padding: 30px;
+  border: 2px solid rgb(0, 0, 0);
+}
 
 .respond-5{
   font-size: 30px;
@@ -480,7 +577,7 @@ body  {
 
 .sec13-img-1{
   position: relative;
-  width: 80%;
+  width: 50%;
   right: 15%;
 }
 
@@ -492,47 +589,14 @@ body  {
 .sec16-img-1{
   position: relative;
   width: 50%;
-  right: 15%;
-}
-
-.sec16-img-2{
-  position: relative;
-  width: 45%;
   left: 10%;
 }
-.sec18-img-1{
-  position: relative;
-  width: 70%;
-}
 
-.sec18-img-2{
-  position: relative;
-  width: 45%;
-  right: 10%;
-  
-}
-.sec18-img-3{
-  position: relative;
-  width: 45%;
-  left: 20%;
-}
-
-.image-container{
+#sec13-image-container{
   display: flex;
   gap: 2em;
   flex-direction: column;
   width: 50%;
   align-items: center;
   justify-content: center;
-}
-
-.button-to-part2{
-  display: block;
-  background-image: url(./assets/img/part_1/button-to-part2.png);
-  background-size: cover;
-  width: 5vw;
-  height: 5vw;
-  bottom: 5%;
-  position: absolute;
-  right: 5%;
 }
