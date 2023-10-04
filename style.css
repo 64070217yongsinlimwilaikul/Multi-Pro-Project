@@ -47,12 +47,53 @@ body  {
   position: relative;
   top: 48%;*/
 }
+<<<<<<< HEAD
 .monologue{
     /* it's actually just for containers but i cant bother changing all the class name, swag */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+=======
+.part-title{
+    background-color: var(--blue);
+    height: 100%;
+}
+
+.blue-to-white-gra{background: linear-gradient(180deg, var(--blue) 0%, var(--white) 100%);}
+.white-to-blue-gra{background: linear-gradient(180deg, var(--white) 0%, var(--blue) 100%);}
+.text{font-size: 3vw;}
+.responseText,.responseCircleText {font-size: 2.5vw;}
+.circleText{font-size: 1.5vw;}
+.badText{font-size: 2vw;}
+.goodText{font-size: 1.3vw;}
+
+.choices-grid-1{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 20px;
+    padding: 1vh;
+}
+.choices-grid-2{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    padding: 5vh 10vw;
+}
+.choices-grid-3 {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 5vh;
+    padding: 10vh 5vw 0;
+}
+.choices-button{
+    height: auto;
+    padding: 10px;
+>>>>>>> 96583e9 (Add files via upload)
     font-size: 30px;
     color: black; 
 }
@@ -206,11 +247,70 @@ body  {
   height: 50%;
 }
 
+<<<<<<< HEAD
 #part-3-section-9{
   background-color: var(--white);
   width: 100%;
   height: 200%;
 }
+=======
+.goodword{
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 10;
+  }
+#goodword-1 {left: 54%; margin-top: 19.5%;}
+#goodword-2 {left: 55%; margin-top: 40.5%;}
+
+/*Specific Section*/
+#section-3{height: 150%;}
+#section-8{height: 150%;}
+#section-12{height: 150%;}
+#section-15{height: 150%;}
+#section-18{height: 180%;}
+#section-36{height: 250%;}
+#section-39{height: 180%;}
+#section-48{height: 150%;}
+
+/*Image*/
+#img-1 {width: 80%;}
+#img-2 {width: 90%;}
+#img-3 {width: 100%;}
+#img-4 {width: 50%; margin-left: -30vw;}
+#img-5 {width: 50%; margin-left: 30vw;}
+#img-6 {width: 90%;}
+#img-7 {width: 100%;}
+#img-8 {width: 80%;}
+#img-9 {width: 80%;}
+#img-10 {width: 90%;}
+#img-11 {width: 50%;}
+#img-12 {width: 90%;}
+#img-13 {width: 100%;}
+#img-14 {position: absolute; width: 40%;}
+#img-15 {position: relative; width: 30%; left: 5%; margin-top: 21%;}
+#img-16 {width: 40%;}
+#img-17 {width: 40%;}
+
+/* Animation */
+.reveal {position: relative; opacity: 0;}
+.reveal.active {opacity: 1;}
+.active.from-bottom {animation: fade-bottom 0.5s ease-in;}
+.active.from-top {animation: fade-top 0.5s ease-in;}
+.active.from-left {animation: fade-left 0.5s ease-in;}
+.active.from-right {animation: fade-right 0.5s ease-in;}
+.active.from-right-slow {animation: fade-right 1s ease-in;}
+.active.from-right-slower {animation: fade-right 1.5s ease-in;}
+.active.from-right-slowest {animation: fade-right 2s ease-in;}
+.active.from-right-snail {animation: fade-right 2.5s ease-in;}
+.active.from-right-me-when-working-speed {animation: fade-right 1000s ease-in;}/* Don't use this one*/
+
+.revealAbs {opacity: 0;}
+.revealAbs.active {opacity: 1;}
+>>>>>>> 96583e9 (Add files via upload)
 
 #part-3-section-10{
   position: relative;
