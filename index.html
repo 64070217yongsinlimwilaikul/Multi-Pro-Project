@@ -2,94 +2,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>บริษัทเสมอภาค จำกัด</title>
+    <title>BENEFIT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi&display=swap" rel="stylesheet"> 
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/img/logo_2.png">
 </head>
-<script src="script.js"></script>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pridi&display=swap" rel="stylesheet"> 
 <body>
-    <section id="part-0-section-4" class="part-title">
-        <div class="reveal from-bottom">
+    <section id="section-1" class="part-title">
+        <div class="active from-bottom">
             <span class="part-number">PART THREE</span><br>
             <span class="part-name">BENEFIT</span>
         </div>
     </section>
-    <div class="blue-to-white-gra"></div>
-    <section id="part-3-section-1" class="monologue">
-        <span class="monologue-text reveal from-bottom">ฉันเป็นหัวหน้าแผนกของบริษัทแห่งหนึ่ง</span>
+    <section id="section-2" class="blue-to-white-gra">
+        <div class="reveal from-bottom">
+            <span class="text">ฉันเป็นหัวหน้าแผนกของบริษัทแห่งหนึ่ง</span>
+        </div>
     </section>
-
-    <section id="part-3-section-2" class="monologue">
-        <img class="part-3-panel sec2-img-1 reveal from-bottom" src="assets/img/PART3/PART3_1.png" alt="">
+    <section id="section-3">
+        <div class="reveal from-bottom">
+            <img class="reveal from-bottom" id="img-1" src="assets/img/PART3/PART3_1.png" alt="Pregnant">
+        </div>
     </section>
-    <section id="part-3-section-3" class="monologue">
-        <span class="before-twist-text reveal from-bottom">หลังจากแต่งงานได้ปีกว่า </span>
-        <div class="twist-text reveal from-bottom">ฉันก็ท้อง</div>
+    <section id="section-4">
+        <div class="reveal from-bottom">
+            <span class="text">หลังจากแต่งงานได้ปีกว่า</span><br>
+            <span class="text" style="color: #b00000; font-family: CSPrajadBold;">ฉันก็ท้อง</span>
+        </div>
     </section>
-    <section id="part-3-section-4" class="monologue">
-        <span class="monologue-text reveal from-bottom">แต่ฉันก็ยังต้องมาทำงาน</span>
+    <section id="section-5">
+        <div class="reveal from-bottom">
+            <span class="text">แต่ฉันก็ยังต้องมาทำงาน</span><br>
+        </div>
     </section>
-    <section id="part-3-section-5" class="monologue">
-        <span class="before-twist-text reveal from-bottom">ถึงแม้จะลาคลอดได้ก็ตาม</span>
-        <span class="bottom-text reveal from-bottom">แต่งานก็ยังคงรั้งฉันไว้อยู่</span>
+    <section id="section-6">
+        <div class="reveal from-bottom">
+            <span class="text">ถึงแม้จะลาคลอดได้ก็ตาม <br> แต่งานก็ยังคงรั้งฉันไว้อยู่</span><br>
+        </div>
     </section>
-    <section id="part-3-section-6" class="monologue">
-        <span class="before-twist-text reveal from-bottom">แค่เรื่องงานก็เครียดมากพอแล้ว </span>
-        <span class="bottom-text reveal from-bottom"><br>ยังจะต้องมาเจอเพื่อนร่วมงาน <br>ที่ไม่เคยจะเข้าใจอะไรอีก</span>
+    <section id="section-7">
+        <div class="reveal from-bottom">
+            <span class="text">แค่เรื่องงานก็เครียดมากพอแล้ว <br> ยังจะต้องมาเจอเพื่อนร่วมงาน <br> ที่ไม่เคยจะเข้าใจอะไรอีก</span><br>
+        </div>
     </section>
-    <section id="part-3-section-7" class="monologue">
-        <div class="part-3-choice-container">
-            <div class="conversation-text reveal from-bottom">เออนี่ แล้วสรุปเธอจะลาหรือเปล่า?</div>
-            <img class="part-3-panel reveal from-bottom" src="assets/img/PART3/PART3_8.png" alt="">
-            <div class="choices-buttons-horizontal">
-                <button class="part-3-choice-button reveal from-left" onclick="contentGates([8,9,10,11,12,13,14,15,16]);answerShow(`.respond-1`,`.respond-2`)">ลาสิ <br>ใกล้จะถึงกำหนดคลอดแล้ว</button>
-                <button class="part-3-choice-button reveal from-right" onclick="contentGates([8,9,10,11,12,13,14,15,16]);answerShow(`.respond-2`,`.respond-1`)">คงต้องลา <br>มันเป็นสิทธิของฉัน</button>
-                <button class="part-3-choice-button reveal from-left" onclick="contentGates([8,9,10,11,12,13,14,15,16]);answerShow(`.respond-1`,`.respond-2`)">ยังดูอยู่เลย <br>แต่คิดว่าน่าจะลาแหละ</button>
-                <button class="part-3-choice-button reveal from-right" onclick="contentGates([8,9,10,11,12,13,14,15,16]);answerShow(`.respond-2`,`.respond-1`)">ลาจ้ะ <br>นี่ฉันเเบ่งงานส่วนของฉันไว้แล้ว</button>
+    <section id="section-8">
+        <div>
+            <div class="text reveal from-bottom" style="color: #b00000; font-family: CSPrajadBold;">เออนี่ แล้วสรุปเธอจะลาหรือเปล่า?</div>
+            <img class="reveal from-bottom" id="img-2" src="assets/img/PART3/PART3_8.png" alt="Personal leaving">
+            <div class="choices-grid-1">
+                <button class="choices-button reveal from-left" onclick="showSection(1);scrollToID(9)">ลาสิ <br>ใกล้จะถึงกำหนดคลอดแล้ว</button>
+                <button class="choices-button reveal from-right" onclick="showSection(1);scrollToID(9)">คงต้องลา <br>มันเป็นสิทธิของฉัน</button>
+                <button class="choices-button reveal from-left" onclick="showSection(1);scrollToID(9)">ยังดูอยู่เลย <br>แต่คิดว่าน่าจะลาแหละ</button>
+                <button class="choices-button reveal from-right" onclick="showSection(1);scrollToID(9)">ลาจ้ะ <br>นี่ฉันเเบ่งงานส่วนของฉันไว้แล้ว</button>
             </div>
+        </div>
     </section>
-    <section id="part-3-section-8" class="monologue panel-none">
-        <div class="part-3-respond-container">
-        <div class="respond-1 reveal from-bottom">ฉันเข้าใจเธอนะ แต่มันก็เดือดร้อนต่อ<br>เพื่อนร่วมทีมของเธอจริงๆ ที่จะต้อง<br>มารับภาระงานแทนเธอ ตั้ง 3 เดือน </div>
-        <div class="respond-2 reveal from-bottom">เป็นคนท้องนี่มันดีจังเลยนะ <br>ลาหายแล้วโยนงานให้คนอื่นได้ด้วย</div>
-    </div>
+    <section id="section-9" class="none">
+        <div class="reveal from-bottom response">
+            <span class="responseText">ฉันเข้าใจเธอนะ แต่มันก็เดือดร้อนต่อ<br>เพื่อนร่วมทีมของเธอจริง ๆ ที่จะต้อง<br>มารับภาระงานแทนเธอ ตั้ง 3 เดือน</span>
+        </div>
     </section>
-    <section id="part-3-section-9" class="monologue panel-none">
-        <span class="monologue-text-text reveal from-bottom">ฉันเข้ามาในห้องประชุม <br>ที่มีลูกน้องนั่งคุยรอเวลา</span>
+    <section id="section-10" class="none">
+        <div class="reveal from-bottom response">
+            <span class="responseText">เป็นคนท้องนี่มันดีจังเลยนะ<br>ลาหายแล้วโยนงานให้คนอื่นได้ด้วย</span>
+        </div>
     </section>
-    <section id="part-3-section-10" class="monologue panel-none">
-        <span class="bubble-1-text reveal from-bottom">เห็นว่าพี่เขาจะ<br>จะลาคลอดนะ</span>
-        <span class="bubble-2-text reveal from-bottom">ภาระงาน<br>พวกเรา<br>ก็จะหนักขึ้นสิงี้</span>
-        <span class="bubble-3-text reveal from-bottom">เป็นเฮดงาน<br>ซะเปล่า</span>
-        <span class="bubble-4-text reveal from-bottom">เสียงาน<br>เสียการ<br>กันพอดี</span>
-        <img class="" src="assets\img\PART3\PART3_2.png" alt="">
+    <section id="section-11" class="none">
+        <div class="reveal from-bottom">
+            <span class="text">ฉันเข้ามาในห้องประชุม<br>ที่มีลูกน้องนั่งคุยรอเวลา</span><br>
+        </div>
     </section>
-    <section id="part-3-section-11" class="monologue panel-none">
-        <span class="monologue-text-text reveal from-bottom">ซึ่งก็ไม่พ้นคำนินทา<br>เกี่ยวกับเรื่องของฉันเอง</span>
+    <section id="section-12" class="none">
+        
+        <div style="position: relative;"><div class="text">เห็นว่าพี่เขา<br>จะลาคลอดนะ</div>
+            <div class="circle circleText revealAbs from-left" id="circle-1">เห็นว่าพี่เขา<br>จะลาคลอดนะ</div>
+            <div class="circle circleText revealAbs from-right" id="circle-2">ภาระงาน<br>พวกเรา<br>ก็จะหนักขึ้นสิงี้</div>
+            <img id="img-3" src="assets/img/PART3/PART3_2.png" alt="Team complaining">    
+            <div class="circle circleText revealAbs from-left" id="circle-3">เป็นเฮดงาน<br>ซะเปล่า</div>
+            <div class="circle circleText revealAbs from-right" id="circle-4">เสียงาน<br>เสียการ<br>กันพอดี</div>
+        </div>
+            
+        
     </section>
-    <section id="part-3-section-12" class="monologue panel-none">
-        <span class="monologue-text-text reveal from-bottom">เรื่องคำลาคลอดก็ต้องทำ</span>
+    <section id="section-13" class="none">
+        <div class="reveal from-bottom">
+            <span class="text">ซึ่งก็ไม่พ้นคำนินทา<br>เกี่ยวกับเรื่องของฉันเอง</span><br>
+        </div>
     </section>
-    <section id="part-3-section-13" class="monologue panel-none">
-        <img class="part-3-panel sec13-img-1 reveal from-left" src="assets\img\PART3\PART3_4.png" alt="">
-        <img class="part-3-panel sec13-img-2 reveal from-right" src="assets\img\PART3\PART3_5.png" alt="">
+    <section id="section-14" class="none">
+        <div class="reveal from-bottom">
+            <span class="text">เรื่องลาคลอดก็ต้องทำ</span><br>
+        </div>
     </section>
-    <section id="part-3-section-14" class="monologue panel-none">
-        <span class="monologue-text-text reveal from-bottom">ฉันเริ่มไม่เเน่ใจแล้ว</span>
+    <section id="section-15" class="none">
+        <div>
+            <img class="reveal from-left" id="img-4" src="assets/img/PART3/PART3_4.png" alt="Team complaining">
+            <br>
+            <img class="reveal from-right" id="img-5" src="assets/img/PART3/PART3_5.png" alt="Team complaining">
+        </div>
     </section>
-    <section id="part-3-section-15" class="monologue panel-none">
-        <span class="monologue-text-text reveal from-bottom">ว่าฉันจะยังลาคลอดดีมั้ย</span>
+    <section id="section-16" class="none">
+        <div class="reveal from-bottom">
+            <span class="text">ฉันเริ่มไม่เเน่ใจแล้ว</span><br>
+        </div>
     </section>
-    <section id="part-3-section-16" class="monologue panel-none">
-        <div class="part-3-choice-container">
-            <div class="conversation-text reveal from-bottom">บางทีการปรึกษากับหัวหน้างาน<br>อาจจะทำให้หาทางออกได้</div>
-            <img class="part-3-panel reveal from-bottom" src="assets/img/PART3/PART3_7.png" alt="">
-            <div class="choices-buttons-vertical">
-                <button class="part-3-choice-button reveal from-bottom" onclick="contentGates([]);answerShow(`.respond-1`,`.respond-2`)">หัวหน้าคะ ช่วงฉันลาคลอด<br>สามารถหาคนมาทำแทนชั่วคราวได้ใช่มั้ยคะ</button>
-                <button class="part-3-choice-button reveal from-bottom" onclick="contentGates([]);answerShow(`.respond-2`,`.respond-1`)">หัวหน้าคะ ช่วงฉันลาคลอด<br>คนในทีมน่าจะได้งานส่วนของฉันเพิ่ม<br>เรารับคนมาทำเพิ่มได้มั้ยคะ</button>
+    <section id="section-17" class="none">
+        <div class="reveal from-bottom">
+            <span class="text">ว่าฉันจะยังลาคลอดดีมั้ย</span><br>
+        </div>
+    </section>
+    <section id="section-18" class="none">
+        <div>
+            <div class="text reveal from-bottom" style="color: #b00000; font-family: CSPrajadBold;">บางทีการปรึกษาหัวหน้า<br>อาจจะทำให้หาทางออกได้</div>
+            <img class="reveal from-bottom" id="img-6" src="assets/img/PART3/PART3_6.png" alt="Consulting">
+            <div class="choices-grid-2">
+                <button class="choices-button reveal from-bottom" onclick="showSection(2);scrollToID(19)">หัวหน้าคะ ช่วงฉันลาคลอด<br>สามารถหาคนมาทำแทนชั่วคราวได้มั้ยคะ</button>
+                <button class="choices-button reveal from-bottom" onclick="showSection(2);scrollToID(19)">หัวหน้าคะ ช่วงฉันลาคลอด<br>คนในทีมน่าจะได้งานส่วนของฉันเพิ่ม<br>เรารับคนเพิ่มมาทำได้มั้ยคะ</button>
             </div>
+        </div>
+    </section>
+    <section id="section-19" class="none">
+        <div class="reveal from-bottom">
+            <span class="text">แต่กลับกลายเป็นว่า<br>ฉันไม่ได้คำปรึกษาที่ดีกลับมาเลย</span><br>
+        </div>
+    </section>
+    <section id="section-20" class="none">
+        <div class="reveal from-bottom">
+            <div class="response responseCircle" style="border-radius: 100%;">
+                <span class="responseCircleText">คุณจะบอกให้ผมหาคนมาแทน ?<br>โดยที่บริษัทเรายังต้องจ่ายเงินให้<br>คุณทุกเดือน ทั้ง ๆ ที่คุณจะไม่<br>มาทำงานตั้ง 3 เดือนเหรอ ?</span><br>
+            </div>
+        </div>
+    </section>
+    <section id="section-21" class="none">
+        <div class="reveal from-bottom">
+            <img class="reveal from-bottom" id="img-7" src="assets/img/PART3/PART3_3.png" alt="Boss complaining">
+        </div>
+    </section>
+    <section id="section-22" class="none">
+        <div class="reveal from-bottom">
+            <div class="text reveal from-bottom" style="color: #b00000; font-family: CSPrajadBold;">ยังไงซะการลาไม่ลา<br>ก็ต้องเป็นฉันเองที่ต้องตัดสินใจ</div>
+            <div class="choices-grid-3">
+                <button class="choices-button reveal from-bottom" onclick="showSection(3);scrollToID(23)">ลา</button>
+                <button class="choices-button reveal from-bottom" onclick="showSection(4);scrollToID(23)">ไม่ลา</button>
+            </div>
+        </div>
+    </section>
+    <section id="section-23" class="none">
+        <div style="position: relative;">
+            <div class="badword badText revealAbs from-right" id="badword-1"><b>คำด่า</b></div>
+            <div class="badword badText revealAbs from-right-slow" id="badword-2"><b>คำด่า</b></div>
+            <div class="badword badText revealAbs from-right-slower" id="badword-5"><b>คำด่า</b></div>
+            <div class="reveal from-bottom">
+                <img id="img-8" src="assets/img/PART3/PART3_9.png" alt="Boss complaining">
+            </div>
+            <div class="badword badText revealAbs from-right-slowest" id="badword-3"><b>คำด่า</b></div>
+            <div class="badword badText revealAbs from-right-snail" id="badword-4"><b>คำด่า</b></div>
+            
+        </div>
+    </section>
+    <section id="section-24" class="none">
+        <div class="reveal from-bottom">
+            <img class="reveal from-bottom" id="img-9" src="assets/img/PART3/PART3_10.png" alt="Boss complaining">
+        </div>
+    </section>
+    <section id="section-25" class="none">
+        <div class="reveal from-bottom">
+            <img class="reveal from-bottom" id="img-10" src="assets/img/PART3/PART3_11.png" alt="Hospital Bed">
+        </div>
+    </section>
+    <section id="section-26" class="none">
+        <div class="reveal from-bottom">
+            <span class="text">อยู่ในมือหมอฉันคิดว่า<br>จะสบายใจขึ้นไปบ้าง</span>
+        </div>
+    </section>
+    <section id="section-27" class="none">
+        <div class="reveal from-bottom">
+            <span class="text">แต่ไม่เลย...</span>
+        </div>
+    </section>
+    <section id="section-28" class="none">
+        <div class="reveal from-bottom">
+            <div class="circle circleText revealAbs from-right" id="circle-5" style="flex-direction: column;">คุณแม่มีภาวะ<br><p class="bold">ครรภ์เป็นพิษ</p>นะครับ</div>
+            <img class="reveal from-bottom" id="img-11" src="assets/img/PART3/PART3_12.png" alt="Doctor">
+        </div>
+    </section>
+    <section id="section-29" class="none">
+        <div class="reveal from-bottom response">
+            <span class="responseText">ควรที่จะลดความเครียด<br>หรือพักผ่อนให้เพียงพอ</span>
+        </div>
+    </section>
+    <section id="section-30" class="none">
+        <div class="reveal from-bottom response">
+            <span class="responseText">หรือถ้าทางที่ดีควรจะอยู่ใน<br>ความดูแลของแพทย์ก่อนจะคลอดครับ</span>
+        </div>
+    </section>
+    <section id="section-31" class="none">
+        <div class="reveal from-bottom">
+            <img class="reveal from-bottom" id="img-12" src="assets/img/PART3/PART3_13.png" alt="Doctor">
+        </div>
+    </section>
+    <section id="section-32" class="none">
+        <div class="reveal from-bottom">
+            <span class="text">ทางออกเดียวของฉันตอนนี้<br>ก็คงต้องเป็นการ<br><p class="bold">“ลาออก”</p></span>
+        </div>
+    </section>
+    <section id="section-33" class="none">
+        <div class="reveal from-bottom">
+            <img class="reveal from-bottom" id="img-13" src="assets/img/PART3/PART3_14.png" alt="Doctor">
+        </div>
+    </section>
+    <section id="section-34" class="none">
+        <div class="reveal from-bottom">
+            <span class="text">ถึงจะรู้สึกผิด<br>แต่สิ่งสำคัญสำหรับฉันตอนนี้</p></span>
+        </div>
+    </section>
+    <section id="section-35" class="none">
+        <div class="reveal from-bottom">
+            <span class="text">คือ<br><p class="bold">ลูก</p> และ <p class="bold">ชีวิต</p> ของฉันเอง</p></span>
+        </div>
     </section>
 </body>
 </html>
