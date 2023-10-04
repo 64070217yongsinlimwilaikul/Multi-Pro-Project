@@ -1,3 +1,7 @@
+@font-face { font-family: CSPrajad; src: url('assets/fonts/CSPraJad\ v2.otf'); }
+@font-face { font-family: CSPrajadBold; src: url('assets/fonts/CSPraJad-bold\ v2.otf'); }
+
+/* Root */
 :root {
     --blue: #001B7C;
     --red: #FF3A21;
@@ -8,6 +12,7 @@
 
 @font-face { font-family: CSPrajad; src: url('assets/fonts/CSPraJad\ v2.otf'); }
 @font-face { font-family: CSPrajadBold; src: url('assets/fonts/CSPraJad-bold\ v2.otf'); } 
+
 body  {
     font-family: CSPrajad;
     margin: 0;
@@ -22,39 +27,25 @@ body  {
     height: 100%;
 }
 
-.white-to-blue-gra{
-  background: linear-gradient(180deg, var(--white) 0%, var(--blue) 100%);
-  width: 100%;
-  height: 100%;
-    width: 100%;
-    height: 100%;
-}
-.white-to-grey-gra{
-  background: linear-gradient(180deg, var(--white) 0%, var(--grey) 100%);
-  width: 100%;
-  height: 100%;
-}
-/*I will just call it title*/
-.part-title{
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+.none{display: none;}
+
+.bold{display: inline; font-family: CSPrajadBold; margin: 0;}
+
+/* Section */
 .part-number{
-    color: white;
-    font-size: 60px;
-    font-family:  'Pridi', serif;
-    /*position: relative;
-    top: 45%;*/
+  color: white;
+  font-size: 60px;
+  font-family:  'Pridi', serif;
+  /*position: relative;
+  top: 45%;*/
 }
 .part-name{
-    color: var(--red);
-    font-size: 100px;
-    font-family:  'Pridi', serif;
-    /*text-align: center;
-    position: relative;
-    top: 48%;*/
+  color: var(--red);
+  font-size: 100px;
+  font-family:  'Pridi', serif;
+  /*text-align: center;
+  position: relative;
+  top: 48%;*/
 }
 .monologue{
     /* it's actually just for containers but i cant bother changing all the class name, swag */
@@ -62,8 +53,7 @@ body  {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 35px;
-    font-size: 3.5vw;
+    font-size: 30px;
     color: black; 
 }
 .monologue-text{
@@ -79,7 +69,7 @@ body  {
 
 .twist-text{
   /* this limit the text to only takes up 50% of the screen */
-  color: #FF3A21;
+  color: #b00000;
   font-weight: bold;
   width: 20%;
   position: absolute;
@@ -106,133 +96,63 @@ body  {
   padding: 30px;
   border: 2px solid rgb(0, 0, 0);
 }
-/*stole some of these to told this is bubble zone*/
-.bubble-1-text{
-  color: #000000;
-  background-color: white;
-  box-sizing: border-box;
-  width: 13%;
-  height: 18%;
-  padding-top: 150px;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 80%;
-  position: absolute;
-  top: -370px;
-  left: 48%;
-}
-.bubble-2-text{
-  color: #000000;
-  background-color: white;
-  box-sizing: border-box;
-  width: 13%;
-  height: 18%;
-  padding-top: 130px;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 80%;
-  position: absolute;
-  top: -320px;
-  left: 68%;
-}
-.bubble-3-text{
-  color: #000000;
-  background-color: white;
-  box-sizing: border-box;
-  width: 10%;
-  height: 14%;
-  padding-top: 100px;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 80%;
-  position: absolute;
-  top: 1%;
-  left: 34%;
-}
-.bubble-4-text{
-  color: #000000;
-  background-color: white;
-  box-sizing: border-box;
-  width: 10%;
-  height: 14%;
-  padding-top: 80px;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 80%;
-  position: absolute;
-  top: 11%;
-  left: 40%;
+.responseCircle{
+    width: 100%;
+    height: 40vw;
+    text-align: center;
+    align-items: center;
+    display: flex;
 }
 
-/*stlyes concerning with part one,*/
-.part-3-conversation-text{
-  /* orange text of the interviewer */
-    color: var(--red);
-    font-weight: bold;
+.circle{
+    position: absolute;
+    height: 45%;
+    width: 14%;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--white);
+    z-index: 10;
+}
+#circle-1 {left: 10%; margin-top: -10%;}
+#circle-2 {right: 12%; margin-top: -16%; height: 60%; width: 16%;}
+#circle-3 {left: 20%; margin-top: -10%; height: 35%; width: 13%;}
+#circle-4 {right: 10%; margin-top: -10%;}
+#circle-5 {right: 28%; margin-top: -10%; height: 50%; width: 14%;}
+
+.badword{
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: 10;
 }
 .part-3-panel{
   margin-top: 3vh;
   width: 80%;
 }
-.part-1-choice-button{
+.part-3-choice-button{
   margin: 4vh 10vh 0vh 10vh;
-  width: 30%;
-  height: 15vh;
-  font-size: 30px;
-  padding: 1vw;
-  width: 30%;
-  height: 15vh;
-  font-size: 1.5vw;
-  padding: 1vw;
+  width: 25%;
+  height: 10vh;
+  font-size: 20px;
+  padding: 10px;
   font-family: CSPrajad;
   color: var(--white);
   background-color: var(--red);
   border-radius: 30px;
   border: none;
-  transition: all .12s;
-  cursor: pointer;
-}
-.part-1-choice-button:hover{
-  background-color: var(--red-hover);
-}
-@media screen and (max-width: 780px) {
-  .part-1-choice-button{
-    margin: 4vh 10vh 0vh 10vh;
-    width: 30%;
-    height: 10vh;
-    font-size: 3.5vw;
-    padding: 1vw;
-    font-family: CSPrajad;
-    color: var(--white);
-    background-color: var(--red);
-    border-radius: 30px;
-    border: none;
-  }
-  .monologue{
-    /* for text that white text in the middle of screen */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 5vw;
-    color: black; 
-}
-}
-
-.word-bubble{
-  height: 60%; /* ถ้าใช้ % จะอิงจาก div แม่ ซึ่ง divแม่จะมีขนาดเท่ากับเนื้อหา เช่นรูป สามารถใช้ vw เพื่อง่ายต่อการทำ responsive ได้ */
-  width: 25%;
-  border: 1px solid black;
-  position: absolute;
-  background-color: white;
-  border-radius: 50%;
-  padding: 0 1rem 0 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;/* กรอบคำพูด */
 }
 #part-0-section-4{
-    /*Chapter Title*/
-    background-color: var(--blue);
-    width: 100%;
-    height: 200%;
+  /*Chapter Title*/
+  background-color: var(--blue);
+  width: 100%;
+  height: 200%;
 }
 #part-3-section-1{
     /*Strang question?*/
@@ -246,13 +166,32 @@ body  {
     width: 100%;
     height: 100%;
 }
-#part-1-section-3{
+#part-3-section-3{
     /*Until....*/
     background-color: var(--white);
     width: 100%;
     height: 100%;
 }
-#part-1-section-4{
+#part-3-section-4{
+  /*I can def pass the interbiew*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+}
+#part-3-section-5{
+  /*I can def pass the interbiew*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+}
+#part-3-section-6{
+  /*I can def pass the interbiew*/
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  gap: .5px;
+}
+#part-3-section-7{
   /*Until....*/
   background-color: var(--white);
   width: 100%;
@@ -260,141 +199,14 @@ body  {
   margin-bottom: 50px;
   align-items: end;
 }
-#part-1-section-5{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 100%;
-}
-#part-1-section-6{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 100%;
-  margin-bottom: 50px;
-  align-items: end;
-}
-#part-1-section-7{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0vh;
-}
-#part-1-section-8{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0vh;
-}
-#part-1-section-9{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0vh;
-}
-#part-1-section-10{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0vh;
-}
-#part-1-section-11{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0vh;
-}
-
-#part-1-section-12{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0vh;
-}
-
-#part-1-section-13{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 150%;
-  margin-bottom: 10vh;
-}
-
-#part-1-section-14{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0vh;
-}
-
-#part-1-section-15{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 150%;
-  margin-bottom: 0vh;
-}
-#part-1-section-16{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 200%;
-  margin-bottom: 50px;
-  align-items: end;
-}
-#part-1-section-17{
-  /*Until....*/
+#part-3-section-8{
   background-color: var(--white);
   margin-bottom: 50px;
   width: 100%;
-  height: 100%;
-  margin-bottom: 0vh;
+  height: 50%;
 }
-#part-1-section-18{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 200%;
-  margin-top: 20vh;
-  margin-bottom: 10vh;
-}
-#part-1-section-19{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 300%;
-  margin-bottom: 0vh;
-}
-#part-1-section-20{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0vh;
-}
-#part-1-section-21{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0vh;
-}
-#part-1-section-22{
-  /*Until....*/
-  background-color: var(--white);
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0vh;
-}
-#part-1-section-23{
-  /*Until....*/
+
+#part-3-section-9{
   background-color: var(--white);
   width: 100%;
   height: 200%;
@@ -463,46 +275,20 @@ body  {
   animation: fade-right 0.5s ease-in;
 }
 @keyframes fade-bottom {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+    0% {transform: translateY(50px);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1;}
 }
 @keyframes fade-top {
-  /* this looks really weird but it's here*/
-  0% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+    0% {transform: translateY(-100px);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1;}
 }
 @keyframes fade-left {
-  0% {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    0% {transform: translateX(-100px);opacity: 0;}
+    100% {transform: translateX(0);opacity: 1;}
 }
-
 @keyframes fade-right {
-  0% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    0% {transform: translateX(100px);opacity: 0;}
+    100% {transform: translateX(0);opacity: 1;}
 }
 
 .panel-none{
@@ -516,40 +302,20 @@ body  {
   position: relative;
 }
 .respond-1{
-  font-size: 50px;
-  width: 20%;
-  position: absolute;
-  color: white;
-  top: 60%;
-  left: 20%;
+  color: #000000;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+  padding: 30px;
+  border: 2px solid rgb(0, 0, 0);
 }
 .respond-2{
-  font-size: 50px;
-  /**border: 2px solid black;**/
-  width: 20%;
-  position: absolute;
-  color: white;
-  top: 40%;
-  right: 20%;
-}
-
-.respond-3{
-  font-size: 30px;
-  width: 20%;
-  position: absolute;
-  color: white;
-  top: 42%;
-  left: 17%;
-}
-
-.respond-4{
-  font-size: 30px;
-  /**border: 2px solid black;**/
-  width: 20%;
-  position: absolute;
-  color: white;
-  top: 40%;
-  right: 15%;
+  color: #000000;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+  padding: 40px;
+  border: 2px solid rgb(0, 0, 0);
 }
 .respond-3{
   color: #000000;
@@ -560,50 +326,21 @@ body  {
   border: 2px solid rgb(0, 0, 0);
 }
 
-.respond-5{
-  font-size: 30px;
-  width: 20%;
-  position: absolute;
-  color: white;
-  top: 42%;
-  right: 15%;
+.sec2-img-1{
+  position: relative;
+  width: 40%;
 }
-
-.respond-6{
-  font-size: 30px;
-  /**border: 2px solid black;**/
-  width: 20%;
-  position: absolute;
-  color: white;
-  top: 45%;
-  left: 17%;
-}
-
-
 
 .sec13-img-1{
   position: relative;
-  width: 50%;
-  right: 15%;
+  width: 35%;
+  bottom: 40%;
+  left: 10%;
 }
 
 .sec13-img-2{
   position: relative;
-  width: 80%;
-  width: 80%;
-  left: 10%;
-}
-.sec16-img-1{
-  position: relative;
-  width: 50%;
-  left: 10%;
+  width: 35%;
+  right: 10%;
 }
 
-#sec13-image-container{
-  display: flex;
-  gap: 2em;
-  flex-direction: column;
-  width: 35%;
-  align-items: center;
-  justify-content: center;
-}
