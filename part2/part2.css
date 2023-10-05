@@ -211,7 +211,7 @@ section{
   height: 12vw;
   background-color: #D9D9D9;
   border-radius: 100px;
-  margin-top: 5rem;
+  margin-top: 20rem;
   animation: shaking 1.5s ease-in infinite;
   cursor: pointer;
 }
@@ -305,6 +305,9 @@ section{
   }
   #employee-img{
     width: 90vw !important;
+  }
+  #button-phone{
+    margin-top: 10rem;
   }
 }
 @media screen and (width < 500px) {
