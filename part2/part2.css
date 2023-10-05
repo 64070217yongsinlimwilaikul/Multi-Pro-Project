@@ -94,6 +94,10 @@ section{
 #img-1{
   width: 70vw; /* width ของรูปแรกที่ฝากสอนงานน้อง */
 }
+#img-sec22{
+  overflow: hidden;
+  width: 90vw;
+}
 #no-book{
   height: 32.3vw; /* ภาพกองหนังสืออันแรกที่ยังไม่มีหนังสือภาพมันไม่เท่ากับอันอื่น */
 }
