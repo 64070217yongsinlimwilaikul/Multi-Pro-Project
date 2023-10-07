@@ -1,0 +1,544 @@
+:root {
+    --blue: #001B7C;
+    --red: #FF3A21;
+    --red-hover: #B9210E;
+    --white: #ffffff;
+}
+
+@font-face { font-family: CSPrajad; src: url('assets/fonts/CSPraJad\ v2.otf'); }
+@font-face { font-family: CSPrajadBold; src: url('assets/fonts/CSPraJad-bold\ v2.otf'); } 
+
+body  {
+    font-family: CSPrajad;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* gradient */
+.blue-to-red-gra{
+    background: linear-gradient(180deg, var(--blue) 0%, var(--red) 100%);
+    width: 100%;
+    height: 100%;
+}
+.red-to-blue-gra{
+    background: linear-gradient(180deg, var(--red) 0%, var(--blue) 100%);
+    width: 100%;
+    height: 100%;
+}
+.blue-to-white-gra{
+    background: linear-gradient(180deg, var(--blue) 0%, var(--white) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.white-to-blue-gra{
+  background: linear-gradient(180deg, var(--white) 0%, var(--blue) 100%);
+  width: 100%;
+  height: 100%;
+}
+
+/* i have no idea what to categorize this*/
+.part-title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part-number{
+    color: white;
+    font-size: 5vw;
+    font-family:  'Pridi', serif;
+    /*position: relative;
+    top: 45%;*/
+}
+.part-name{
+    color: var(--red);
+    font-size: 7vw;
+    font-family:  'Pridi', serif;
+    /*text-align: center;
+    position: relative;
+    top: 48%;*/
+}
+.monologue{
+    /* for text that white text in the middle of screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3.5vw;
+    color: black; 
+}
+.monologue-text{
+    /* this limit the text to only takes up 50% of the screen */
+    width: 50%;
+}
+
+.conversation-text{
+  /* this limit the text to only takes up 50% of the screen */
+  color: var(--red);
+  font-weight: bold;
+}
+
+/*stlyes concerning with part one,*/
+.part-1-conversation-text{
+  /* orange text of the interviewer */
+    color: var(--red);
+    font-weight: bold;
+}
+.part-1-panel{
+  margin-top: 3vh;
+  width: 80%;
+}
+
+.logo_image{
+  margin-top: 3vh;
+  width: 100%;
+  text-align: center;
+}
+.part-1-choice-button{
+  margin: 4vh 10vh 0vh 10vh;
+  width: 30%;
+  height: 15vh;
+  font-size: 1.5vw;
+  padding: 1vw;
+  font-family: CSPrajad;
+  color: var(--white);
+  background-color: var(--red);
+  border-radius: 30px;
+  border: none;
+  transition: all .12s;
+  cursor: pointer;
+}
+.part-1-choice-button:hover{
+  background-color: var(--red-hover);
+}
+
+@media screen and (max-width: 780px) {
+  .part-1-choice-button{
+    margin: 4vh 10vh 0vh 10vh;
+    width: 30%;
+    height: 10vh;
+    font-size: 3.5vw;
+    padding: 1vw;
+    font-family: CSPrajad;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 30px;
+    border: none;
+  }
+}
+  .monologue{
+    /* for text that white text in the middle of screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5vw;
+    color: black; 
+}
+
+
+.word-bubble{
+  height: 60%; /* ถ้าใช้ % จะอิงจาก div แม่ ซึ่ง divแม่จะมีขนาดเท่ากับเนื้อหา เช่นรูป สามารถใช้ vw เพื่อง่ายต่อการทำ responsive ได้ */
+  width: 25%;
+  border: 1px solid black;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;/* กรอบคำพูด */
+}
+
+
+/* PART ONE INTERVIEW's sections */
+/* อาจจะเปลือง css หน่อยแต่ถ้าทำอย่างนี้คิดว่าน่าจะ implement scroll animation กับ funny gimmick ได้ง่ายกว่า */
+#part-0-section-1{
+    /*that blank blue scrren*/
+    background-color: var(--blue);
+    width: 100%;
+    height: 100%;
+    color: var(--white) !important;
+}
+#part-0-section-1b{
+  /*that blank blue scrren*/
+  background-color: var(--blue);
+  width: 100%;
+  height: 150%;
+  color: var(--white) !important;
+}
+#part-0-section-2{
+    /*company name*/
+    background-color: var(--red);
+    width: 100%;
+    height: 100%;
+}
+#part-0-section-3{
+    /*this webtoon*/
+    background-color: var(--blue);
+    width: 100%;
+    height: 100%;
+    color: var(--white) !important;
+}
+#part-0-section-4{
+    /*Chapter Title*/
+    background-color: var(--blue);
+    width: 100%;
+    height: 150%;
+}
+#part-1-section-1{
+    /*Strang question?*/
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+}
+#part-1-section-2{
+    /*I can def pass the interbiew*/
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+}
+#part-1-section-3{
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+}
+#part-1-section-4{
+  background-color: var(--white);
+  width: 100%;
+  height: 200%;
+  margin-bottom: 15vh;
+  align-items: end;
+}
+#part-1-section-5{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-6{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10vh;
+  align-items: end;
+}
+#part-1-section-7{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-8{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-9{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-10{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-11{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+
+#part-1-section-12{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100vh;
+}
+
+#part-1-section-13{
+  background-color: var(--white);
+  width: 100%;
+  height: 150%;
+  margin-bottom: 30vh;
+}
+
+#part-1-section-14{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+
+#part-1-section-15{
+  background-color: var(--white);
+  width: 100%;
+  height: 150%;
+  margin-bottom: 0vh;
+}
+#part-1-section-16{
+  background-color: var(--white);
+  width: 100%;
+  height: 200%;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+#part-1-section-17{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100vh;
+}
+#part-1-section-18{
+  background-color: var(--white);
+  width: 100%;
+  height: 200%;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+}
+#part-1-section-19{
+  background-color: var(--white);
+  width: 100%;
+  height: 300%;
+  margin-bottom: 0vh;
+}
+#part-1-section-20{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-21{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-22{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+}
+#part-1-section-23{
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0vh;
+  position: relative;
+}
+
+
+/* related to fade to show gimmick */
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+.reveal.active {
+  opacity: 1;
+}
+.active.from-bottom {
+  animation: fade-bottom 0.5s ease-in;
+}
+.active.from-top {
+  animation: fade-top 0.5s ease-in;
+}
+.active.from-left {
+  animation: fade-left 0.5s ease-in;
+}
+.active.from-right {
+  animation: fade-right 0.5s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-top {
+  /* this looks really weird but it's here*/
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.panel-none{
+  display: none;
+}
+.panel-show{
+  display:block;
+}
+
+.part-1-respond-container{
+  position: relative;
+}
+.respond-1{
+  font-size: 2vw;
+  width: 23%;
+  position: absolute;
+  color: black;
+  top: 41%;
+  left: 8%;
+
+}
+#span-bubble-1{
+  display: flex;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+}
+
+.respond-2{
+  margin: auto;
+  font-size: 2vw;
+  /**border: 2px solid black;**/
+  width: 18%;
+  position: absolute;
+  color: black;
+  top: 11%;
+  right: 11%;
+}
+#span-bubble-2{
+  margin: auto;
+  position: absolute;
+  top: 42%;
+  left: 37%;
+}
+
+.respond-3{
+  font-size: 3vw;
+  width: 60%;
+  position: absolute;
+  color: black;
+  top: 60%;
+  left: 7%;
+}
+
+.respond-4{
+  font-size: 3vw;
+  /**border: 2px solid black;**/
+  width: 40%;
+  position: absolute;
+  color: black;
+  top: 31%;
+  right: 7%;
+}
+
+.respond-5{
+  font-size: 3vw;
+  width: 60%;
+  position: absolute;
+  color: black;
+  top: 55%;
+  left: 0%;
+}
+
+.respond-6{
+  font-size: 3vw;
+  /**border: 2px solid black;**/
+  width: 40%;
+  position: absolute;
+  color: black;
+  top: 45%;
+  right: 7%;
+}
+
+
+
+.sec13-img-1{
+  position: relative;
+  width: 80%;
+  right: 15%;
+}
+
+.sec13-img-2{
+  position: relative;
+  width: 80%;
+  left: 10%;
+}
+.sec16-img-1{
+  position: relative;
+  width: 80%;
+  right: 15%;
+}
+
+.sec16-img-2{
+  position: relative;
+  width: 80%;
+  left: 10%;
+}
+.sec18-img-1{
+  position: relative;
+  width: 80%;
+}
+
+.sec18-img-2{
+  position: relative;
+  width: 80%;
+  right: 10%;
+  
+}
+.sec18-img-3{
+  position: relative;
+  width: 80%;
+  left: 20%;
+}
+
+.image-container{
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-to-part2{
+  display: block;
+  background-image: url(./assets/img/part_1/button-to-part2.png);
+  background-size: cover;
+  width: 10vw;
+  height: 10vw;
+  bottom: 5%;
+  position: absolute;
+  right: 5%;
+}
