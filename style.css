@@ -113,6 +113,7 @@ body  {
 .part-1-choice-button:hover{
   background-color: var(--red-hover);
 }
+
 @media screen and (max-width: 780px) {
   .part-1-choice-button{
     margin: 4vh 10vh 0vh 10vh;
@@ -126,6 +127,7 @@ body  {
     border-radius: 30px;
     border: none;
   }
+}
   .monologue{
     /* for text that white text in the middle of screen */
     display: flex;
@@ -135,7 +137,7 @@ body  {
     font-size: 5vw;
     color: black; 
 }
-}
+
 
 .word-bubble{
   height: 60%; /* ถ้าใช้ % จะอิงจาก div แม่ ซึ่ง divแม่จะมีขนาดเท่ากับเนื้อหา เช่นรูป สามารถใช้ vw เพื่อง่ายต่อการทำ responsive ได้ */
@@ -150,6 +152,7 @@ body  {
   justify-content: center;
   z-index: 999;/* กรอบคำพูด */
 }
+
 
 /* PART ONE INTERVIEW's sections */
 /* อาจจะเปลือง css หน่อยแต่ถ้าทำอย่างนี้คิดว่าน่าจะ implement scroll animation กับ funny gimmick ได้ง่ายกว่า */
