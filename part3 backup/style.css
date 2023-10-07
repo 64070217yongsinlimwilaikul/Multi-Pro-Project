@@ -1,10 +1,12 @@
-@font-face { font-family: CSPrajad; src: url('../assets/fonts/CSPraJad\ v2.otf'); }
-@font-face { font-family: CSPrajadBold; src: url('../assets/fonts/CSPraJad-bold\ v2.otf'); }
+@font-face { font-family: CSPrajad; src: url('assets/fonts/CSPraJad\ v2.otf'); }
+@font-face { font-family: CSPrajadBold; src: url('assets/fonts/CSPraJad-bold\ v2.otf'); }
 
 /* Root */
 :root {
     --blue: #001B7C;
     --red: #FF3A21;
+    --redHover: #d61900;
+    --redActive: #ff6b58;
     --white: #ffffff;
 }
 
@@ -48,9 +50,13 @@ section{
 }
 
 .blue-to-white-gra{background: linear-gradient(180deg, var(--blue) 0%, var(--white) 100%);}
+.white-to-blue-gra{background: linear-gradient(180deg, var(--white) 0%, var(--blue) 100%);}
 .text{font-size: 3vw;}
 .responseText,.responseCircleText {font-size: 2.5vw;}
 .circleText{font-size: 1.5vw;}
+.badText{font-size: 2vw;}
+.goodText{font-family: CSPrajadBold; font-size: 2vw;}
+.endText{font-size: 2vw; color: white;}
 
 .choices-grid-1{
     display: grid;
@@ -82,7 +88,10 @@ section{
     background-color: var(--red);
     border-radius: 3.5rem;
     border: none;
+    cursor: pointer;
 }
+.choices-button:hover{background-color: var(--redHover);}
+.choices-button:active{background-color: var(--redActive);}
 
 .response{
     color: #000000;
@@ -117,7 +126,68 @@ section{
 #circle-2 {right: 12%; margin-top: -16%; height: 60%; width: 16%;}
 #circle-3 {left: 20%; margin-top: -10%; height: 35%; width: 13%;}
 #circle-4 {right: 10%; margin-top: -10%;}
-#circle-5 {right: 28%; margin-top: -10%; height: 50%; width: 14%;}
+#circle-5 {right: 22%; margin-top: -10%; height: 40%; width: 14%;}
+
+.badword{
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: 10;
+}
+#badword-1 {left: 22%; margin-top: 11%;}
+#badword-2 {left: 40%; margin-top: 11%;}
+#badword-3 {left: 20%; margin-top: -34%;}
+#badword-4 {left: 48%; margin-top: -37%;}
+#badword-5 {left: 54%; margin-top: 15%;}
+
+#topic {color: #b00000; font-family: CSPrajadBold; font-size: 5vw;}
+
+.goodTextGrid {
+    position: absolute;
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+    align-items: center;
+    width: 40%;
+    height: 28vw;
+    gap: 10px;
+    margin-top: -15%;
+    left: 35%;
+}
+
+.endSection{
+    background: #001B7C;
+    justify-content: space-between;
+    padding: 0vw 10vw;
+}
+.endButtonFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+.endButton{
+    background: var(--red);
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    border: none;
+    padding: 2vw;
+    cursor: pointer;
+}
+.endButton:hover{background-color: var(--redHover);}
+.endButton:active{background-color: var(--redActive);}
+.endSquare{
+    background: var(--white);
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 20%;
+    padding: 0.5vw;
+}
 
 /*Specific Section*/
 #section-3{height: 150%;}
@@ -125,6 +195,9 @@ section{
 #section-12{height: 150%;}
 #section-15{height: 150%;}
 #section-18{height: 180%;}
+#section-35{height: 150%;}
+#section-36{height: 180%;}
+#section-46{height: 35%;}
 
 /*Image*/
 #img-1 {width: 80%;}
@@ -135,9 +208,16 @@ section{
 #img-6 {width: 90%;}
 #img-7 {width: 100%;}
 #img-8 {width: 90%;}
-#img-9 {width: 50%;}
+#img-9 {width: 100%;}
 #img-10 {width: 90%;}
-#img-11 {width: 100%;}
+#img-11 {width: 70%;}
+#img-12 {width: 80%;}
+#img-13 {width: 100%;}
+#img-14 {width: 55%;}
+#img-15 {width: 80%;}
+#img-16 {width: 60%;}
+#img-17 {width: 50%;}
+#img-18 {width: 70%;}
 
 /* Animation */
 .reveal {position: relative; opacity: 0;}
@@ -146,6 +226,11 @@ section{
 .active.from-top {animation: fade-top 0.5s ease-in;}
 .active.from-left {animation: fade-left 0.5s ease-in;}
 .active.from-right {animation: fade-right 0.5s ease-in;}
+.active.from-right-slow {animation: fade-right 1s ease-in;}
+.active.from-right-slower {animation: fade-right 1.5s ease-in;}
+.active.from-right-slowest {animation: fade-right 2s ease-in;}
+.active.from-right-snail {animation: fade-right 2.5s ease-in;}
+.active.from-right-me-when-working-speed {animation: fade-right 1000s ease-in;}/* Don't use this one*/
 
 .revealAbs {opacity: 0;}
 .revealAbs.active {opacity: 1;}
@@ -173,31 +258,55 @@ section{
     .part-number{font-size: 9vw;}
     .part-name{font-size: 12vw;}
     .text{font-size: 6vw;}
-    .choices-button-1{font-size: 25px;}
     .response{width: 90%; font-size: 5vw;}
     .responseCircle{width: 100%; height: 55vw;}
     .responseText{font-size: 5.5vw;}
     .responseCircleText{font-size: 4.25vw;}
     .circleText{font-size: 2.1vw;}
+    .goodText{font-size: 2.5vw;}
+    .endText{font-size: 2.5vw;}
+
+    .endButton{
+        width: 12vw;
+        height: 12vw;
+        padding: 2.5vw;
+    }
 
     #section-3{height: 110%;}
     #section-8{height: 110%;}
     #section-12{height: 90%;}
     #section-15{height: 90%;}
     #section-18{height: 120%;}
+    #section-35{height: 120%;}
+    #section-36{height: 120%;}
 
     #img-1 {width: 60%;}
     #img-2 {width: 75%;}
-    #img-9 {width: 75%;}
+    #img-9 {width: 80%;}
+    #img-16 {width: 70%;}
+    #img-17 {width: 55%;}
+    #img-18 {width: 90%;}
 
     #circle-5 {right: 20%; margin-top: -10%; height: 50%; width: 25%;}
+
+    #topic {font-size: 9vw;}
 }
 
 @media screen and (width < 640px){
     section{height: 50%;}
+    .endText{font-size: 3vw;}
+
+    .endButton{
+        width: 15vw;
+        height: 15vw;
+        padding: 3vw;
+    }
+
     #img-1 {width: 75%;}
     #img-4 {width: 60%;}
     #img-5 {width: 60%;}
+    #img-14 {width: 65%;}
+    #img-17 {width: 50%;}
 
     .choices-grid-1{
         display: grid;
@@ -217,8 +326,18 @@ section{
 }
 
 @media screen and (width < 440px){
+    .goodText{font-size: 3vw;}
+
+    #section-35{height: 80%;}
+    #section-36{height: 80%;}
+
     #img-1 {width: 100%;}
     #img-2 {width: 100%;}
+    #img-14 {width: 80%;}
+    #img-16 {width: 80%;}
+    #img-17 {width: 70%;}
 
     .responseCircle{width: 100%; height: 85vw;}
+
+    .goodTextGrid {margin-top: -25%;}
 }
