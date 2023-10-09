@@ -242,6 +242,9 @@ section{
 /* ในส่วนของข้างล่างจะเป็น อารมณ์คล้ายๆ frame work นั่นแหละ */
 
 /* gradient */
+.panel-none{
+  display: none;
+}
 .hide{
   opacity: 0;
 }
