@@ -132,6 +132,10 @@ section{
 .text-details{
   font-size: 2.5vw;
 }
+.words-ans{
+  font-size: 2vw !important;
+  font-weight: 600;
+}
 .word-bubble{
     height: 100%; /* ถ้าใช้ % จะอิงจาก div แม่ ซึ่ง divแม่จะมีขนาดเท่ากับเนื้อหา เช่นรูป สามารถใช้ vw เพื่อง่ายต่อการทำ responsive ได้ */
     width: 25%;
@@ -165,8 +169,8 @@ section{
   gap: 2rem;
 }
 .button-ans{
-  width: 25vw;
-  height: 10vw;
+  width: 32vw;
+  height: 12vw;
   padding: 1rem;
   border-radius: 100px;
   background-color: #D4145A;
@@ -195,7 +199,7 @@ section{
   font-size: 3.8vw !important;
 }
 .words{
-  font-size: 1.7vw;
+  font-size: 1.8vw;
 }
 .words-bigger{
   font-size: 2vw;
@@ -303,7 +307,7 @@ section{
     font-size: 4vw;
   }
   .words{
-    font-size: 2.3vw;
+    font-size: 2.5vw;
   }
   .words-bigger{
     font-size: 2.6vw;
@@ -332,22 +336,28 @@ section{
     margin-top: 10rem;
   }
   .button-ans{
-    height: 15vw;
-    width: 38vw;
+    height: 18vw;
+    width: 42vw;
   }
   .img-1-q{
     width: 95vw;
-  }  
+  }
+  .words-ans{
+    font-size: 2.5vw !important;
+  }
 }
 @media screen and (width < 500px) {
   #phone-background{
     height: 25vw;
   }
   .words{
-    font-size: 2.6vw !important;
+    font-size: 2.7vw !important;
   }
   .words-bigger{
     font-size: 3vw;
+  }
+  .words-ans{
+    font-size: 3vw !important;
   }
 }
 /* related to fade to show gimmick */
