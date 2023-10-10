@@ -75,6 +75,9 @@ section{
   height: 200% !important;
   position: relative;
 }
+.bias{
+  height: 200% !important;
+}
 #section-16{
   height: 150% !important;
 }
@@ -167,6 +170,9 @@ section{
 .q{
   display: flex;
   gap: 2rem;
+}
+.img-2-q{
+  width: 40vw;
 }
 .button-ans{
   width: 32vw;
@@ -344,6 +350,9 @@ section{
   }
   .words-ans{
     font-size: 2.5vw !important;
+  }
+  .img-2-q{
+    width: 80vw;
   }
 }
 @media screen and (width < 500px) {
