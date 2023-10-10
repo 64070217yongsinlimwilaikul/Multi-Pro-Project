@@ -165,8 +165,8 @@ section{
   gap: 2rem;
 }
 .button-ans{
-  width: 30vw;
-  height: 8vw;
+  width: 25vw;
+  height: 10vw;
   padding: 1rem;
   border-radius: 100px;
   background-color: #D4145A;
@@ -332,7 +332,8 @@ section{
     margin-top: 10rem;
   }
   .button-ans{
-    height: 13vw;
+    height: 15vw;
+    width: 38vw;
   }
   .img-1-q{
     width: 95vw;
