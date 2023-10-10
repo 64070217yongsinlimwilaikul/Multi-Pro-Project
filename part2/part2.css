@@ -36,7 +36,7 @@ section{
   width: 30vw; /* ขนาดรูปที่ยาวแนวตั้ง ตอนหน้าจอ < 960px*/
 }
 .img-1-q{
-  width: 90vw;
+  width: 70vw;
 }
 
 /* จบ ต่อไปไม่ต้องรู้ก็ได้ */
@@ -72,6 +72,7 @@ section{
   height: 150% !important;
 }
 #section-13{
+  height: 200% !important;
   position: relative;
 }
 #section-16{
@@ -85,6 +86,9 @@ section{
 }
 #section-22 .text, #section-23 .text, #section-33 .text{
   color: #D4145A;
+}
+#section-22, #section-23{
+  height: 200% !important;
 }
 .final-section{
   position: relative;
@@ -161,14 +165,17 @@ section{
   gap: 2rem;
 }
 .button-ans{
-  width: 35vw;
-  height: 10vh;
+  width: 30vw;
+  height: 8vw;
   padding: 1rem;
   border-radius: 100px;
   background-color: #D4145A;
   color: var(--white);
   transition: all .13s;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .button-ans:hover{
   background-color: #a1073f;
@@ -219,7 +226,7 @@ section{
 }
 #button-phone{
   width: 25vw;
-  height: 12vw;
+  height: 10vw;
   background-color: #D9D9D9;
   border-radius: 100px;
   margin-top: 20rem;
@@ -315,6 +322,7 @@ section{
     width: 50vw;
   }
   #button-phone{
+    height: 15vw;
     width: 40vw;
   }
   #employee-img{
@@ -323,6 +331,12 @@ section{
   #button-phone{
     margin-top: 10rem;
   }
+  .button-ans{
+    height: 13vw;
+  }
+  .img-1-q{
+    width: 95vw;
+  }  
 }
 @media screen and (width < 500px) {
   #phone-background{
