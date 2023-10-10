@@ -80,6 +80,9 @@ section{
 #section-17{
   height: 150% !important;
 }
+#section-21 > div > img{
+  width: 80vw !important;
+}
 #section-22 .text, #section-23 .text, #section-33 .text{
   color: #D4145A;
 }
@@ -169,6 +172,14 @@ section{
 }
 .button-ans:hover{
   background-color: #a1073f;
+  animation: button-ans .3s linear infinite;
+}
+.button-ans-wrap:hover{
+  transform: scale(1.1, 1.1);
+}
+.button-ans-wrap:active{
+  transition: all .15s;
+  transform: scale(.9, .9);
 }
 .bias-header{
   color: #D4145A;
@@ -420,5 +431,16 @@ section{
   }
   7%, 15%, 23%{
     transform: translateX(0px);
+  }
+}
+@keyframes button-ans{
+  0%, 100%{
+    transform: rotateZ(0deg);
+  }
+  25%{
+    transform: rotateZ(3deg);
+  }
+  75%{
+    transform: rotateZ(-3deg);
   }
 }
