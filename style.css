@@ -1,6 +1,7 @@
 :root {
     --blue: #001B7C;
     --red: #FF3A21;
+    --red-select : rgb(178, 38, 19);
     --white: #ffffff;
 }
 
@@ -106,6 +107,10 @@ body  {
   background-color: var(--red);
   border-radius: 30px;
   border: none;
+}
+.part-1-choice-button:hover{
+  background-color: var(--red-select);
+
 }
 @media screen and (max-width: 780px) {
   .part-1-choice-button{
@@ -402,7 +407,7 @@ body  {
   position: relative;
 }
 .respond-1{
-  font-size: 2vw;
+  font-size: 35px;
   width: 23%;
   position: absolute;
   color: black;
@@ -412,7 +417,7 @@ body  {
 
 .respond-2{
   margin: auto;
-  font-size: 2vw;
+  font-size: 35px;
   /**border: 2px solid black;**/
   width: 18%;
   position: absolute;
@@ -422,8 +427,8 @@ body  {
 }
 
 .respond-3{
-  font-size: 2vw;
-  width: 60%;
+  font-size: 35px;
+  width: 40%;
   position: absolute;
   color: black;
   top: 77%;
@@ -431,7 +436,7 @@ body  {
 }
 
 .respond-4{
-  font-size: 2vw;
+  font-size: 35px;
   /**border: 2px solid black;**/
   width: 40%;
   position: absolute;
@@ -441,7 +446,7 @@ body  {
 }
 
 .respond-5{
-  font-size: 2vw;
+  font-size: 35px;
   width: 40%;
   position: absolute;
   color: black;
@@ -450,13 +455,70 @@ body  {
 }
 
 .respond-6{
-  font-size: 2vw;
+  font-size: 35px;
   /**border: 2px solid black;**/
   width: 30%;
   position: absolute;
   color: black;
   top: 45%;
   right: -5%;
+}
+
+@media screen and (max-width: 780px) {
+  .respond-1{
+    font-size: 30px;
+    width: 23%;
+    position: absolute;
+    color: black;
+    top: 41%;
+    left: 8%;
+  }
+  
+  .respond-2{
+    margin: auto;
+    font-size: 30px;
+    width: 18%;
+    position: absolute;
+    color: black;
+    top: 11%;
+    right: 11%;
+  }
+  
+  .respond-3{
+    font-size: 30px;
+    width: 45%;
+    position: absolute;
+    color: black;
+    top: 77%;
+    left: 8%;
+  }
+  
+  .respond-4{
+    font-size: 30px;
+    width: 40%;
+    position: absolute;
+    color: black;
+    top: 77%;
+    right: 5%;
+  }
+  
+  .respond-5{
+    font-size: 30px;
+    width: 40%;
+    position: absolute;
+    color: black;
+    top: 75%;
+    left: 10%;
+  }
+  
+  .respond-6{
+    font-size: 30px;
+    width: 30%;
+    position: absolute;
+    color: black;
+    top: -5%;
+    right: 5%;
+  }
 }
 
 .sec13-img-1{
@@ -508,7 +570,7 @@ body  {
 }
 
 .part-1-info-image{
-  width: 1000px;
+  width: 900px;
 }
 
 .button-to-part2{
