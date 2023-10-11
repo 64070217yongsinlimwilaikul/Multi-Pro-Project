@@ -107,15 +107,7 @@ body  {
   border-radius: 30px;
   border: none;
 }
-<<<<<<< Updated upstream
 @media screen and (max-width: 780px) {
-=======
-.part-1-choice-button:hover{
-  background-color: var(--red-hover);
-}
-
-@media screen and (max-width: 820px) {
->>>>>>> Stashed changes
   .part-1-choice-button{
     margin: 4vh 10vh 0vh 10vh;
     width: 30%;
@@ -128,7 +120,6 @@ body  {
     border-radius: 30px;
     border: none;
   }
-<<<<<<< Updated upstream
   .monologue{
     /* for text that white text in the middle of screen */
     display: flex;
@@ -139,10 +130,6 @@ body  {
     color: black; 
 }
 }
-=======
-}
-
->>>>>>> Stashed changes
 
 .word-bubble{
   height: 60%; /* ถ้าใช้ % จะอิงจาก div แม่ ซึ่ง divแม่จะมีขนาดเท่ากับเนื้อหา เช่นรูป สามารถใช้ vw เพื่อง่ายต่อการทำ responsive ได้ */
