@@ -135,6 +135,21 @@ body  {
     color: black; 
 }
 }
+@media screen and (max-width: 500px) {
+  .part-1-choice-button{
+    margin: 4vh 10vh 0vh 10vh;
+    width: 30%;
+    height: 10vh;
+    font-size: 15px;
+    padding: 1vw;
+    font-family: CSPrajad;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 30px;
+    border: none;
+  }
+}
+
 
 .word-bubble{
   height: 60%; /* ถ้าใช้ % จะอิงจาก div แม่ ซึ่ง divแม่จะมีขนาดเท่ากับเนื้อหา เช่นรูป สามารถใช้ vw เพื่อง่ายต่อการทำ responsive ได้ */
@@ -428,11 +443,12 @@ body  {
 
 .respond-3{
   font-size: 35px;
-  width: 40%;
+  width: 43%;
+  height: 90%;
   position: absolute;
   color: black;
-  top: 77%;
-  left: -15%;
+  top: 80%;
+  left: 0%;
 }
 
 .respond-4{
@@ -442,7 +458,7 @@ body  {
   position: absolute;
   color: black;
   top: 31%;
-  right: -7%;
+  right: 0%;
 }
 
 .respond-5{
@@ -460,11 +476,11 @@ body  {
   width: 30%;
   position: absolute;
   color: black;
-  top: 45%;
-  right: -5%;
+  top: 65%;
+  right: 5%;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 820px) {
   .respond-1{
     font-size: 30px;
     width: 23%;
@@ -519,6 +535,93 @@ body  {
     top: -5%;
     right: 5%;
   }
+
+  .image-container{
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    width: 70%!important; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  .part-1-info-image{
+    width: 500px !important;
+    margin-bottom: 30px;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  .respond-1{
+    font-size: 20px;
+    width: 23%;
+    position: absolute;
+    color: black;
+    top: 41%;
+    left: 8%;
+  }
+  
+  .respond-2{
+    margin: auto;
+    font-size: 20px;
+    width: 18%;
+    position: absolute;
+    color: black;
+    top: 11%;
+    right: 11%;
+  }
+  
+  .respond-3{
+    font-size: 20px;
+    width: 45%;
+    position: absolute;
+    color: black;
+    top: 77%;
+    left: 8%;
+  }
+  
+  .respond-4{
+    font-size: 20px;
+    width: 40%;
+    position: absolute;
+    color: black;
+    top: 77%;
+    right: 5%;
+  }
+  
+  .respond-5{
+    font-size: 20px;
+    width: 40%;
+    position: absolute;
+    color: black;
+    top: 75%;
+    left: 10%;
+  }
+  
+  .respond-6{
+    font-size: 20px;
+    width: 30%;
+    position: absolute;
+    color: black;
+    top: -5%;
+    right: 5%;
+  }
+
+  .image-container{
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    width: 70%!important; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  .part-1-info-image{
+    width: 300px !important;
+    margin-bottom: 30px;
+  }
+  
 }
 
 .sec13-img-1{
@@ -571,6 +674,7 @@ body  {
 
 .part-1-info-image{
   width: 900px;
+  margin-bottom: 30px;
 }
 
 .button-to-part2{
