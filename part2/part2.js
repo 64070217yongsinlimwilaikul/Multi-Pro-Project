@@ -28,12 +28,15 @@ function reveal() {
       }
   }
 window.addEventListener("scroll", reveal);
-
-function answerShow(target,oppo) {
-  var target_panel = document.querySelector(target);
-  var oppo_panel = document.querySelector(oppo);
-  target_panel.classList.remove("panel-none");
-  target_panel.classList.add("panel-show");
-  oppo_panel.classList.remove("panel-show");
-  oppo_panel.classList.add("panel-none");
+function contentGates(seclist) {
+  for (let i = seclist[0]; i <= seclist[1]; i++) {
+    console.log(document.querySelector('#section-' + i ));
+    if(document.querySelector('#section-' + i ) == null){
+      break;
+    }
+    else{
+      document.querySelector('#section-' + i ).classList.remove("panel-none");
+    }
+  }
 }
+function scrollToID(ID) {document.querySelector('#section-' + ID).scrollIntoView();}
