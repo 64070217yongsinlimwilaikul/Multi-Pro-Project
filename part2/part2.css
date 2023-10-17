@@ -10,6 +10,7 @@
     font-family: CSPrajad;
     text-decoration: none;
     transition: all .5s;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0;
@@ -90,11 +91,8 @@ section{
 #section-17{
   height: 150% !important;
 }
-#section-22 .text, #section-23 .text, #section-33 .text{
+#section-22 .text-question, #section-23 .text-question, #section-33 .text-question{
   color: #D4145A;
-}
-#section-22, #section-23{
-  height: 200% !important;
 }
 .final-section{
   position: relative;
@@ -103,6 +101,9 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;  /* ทำไว้เพราะ section 8 อยากให้ตัวอักษรที่อยู่ข้างๆรูปอยู่ตรงกลาง */
+}
+.bias-details{
+  width: 50vw;
 }
 #img-1{
   width: 70vw; /* width ของรูปแรกที่ฝากสอนงานน้อง */
@@ -133,13 +134,16 @@ section{
 }
 
 .text{
-  font-size: 3.5vw; /* class ของข้อความที่ปรากฎบนหน้าจอไม่ใช่ในกรอบคำพูด */
+  font-size: 4rem; /* class ของข้อความที่ปรากฎบนหน้าจอไม่ใช่ในกรอบคำพูด */
+}
+.text-question{
+  font-size: 3rem;
 }
 .text-details{
   font-size: 2.5vw;
 }
 .words-ans{
-  font-size: 2vw !important;
+  font-size: 1.2vw !important;
   font-weight: 600;
 }
 .word-bubble{
@@ -178,9 +182,9 @@ section{
   width: 40vw;
 }
 .button-ans{
-  width: 32vw;
-  height: 12vw;
-  padding: 1rem;
+  width: 18vw;
+  height: 7vw;
+  padding: 1.5rem;
   border-radius: 100px;
   background-color: #D4145A;
   color: var(--white);
@@ -203,9 +207,10 @@ section{
 }
 .bias-header{
   color: #D4145A;
+  font-size: 2.7vw !important;
 }
 .bias-text{
-  font-size: 3.8vw !important;
+  font-size: 3rem !important;
 }
 .words{
   font-size: 1.8vw;
@@ -351,8 +356,8 @@ section{
     margin-top: 10rem;
   }
   .button-ans{
-    height: 18vw;
-    width: 42vw;
+    height: 15vw;
+    width: 40vw;
   }
   .img-1-q{
     width: 95vw;
@@ -362,6 +367,18 @@ section{
   }
   .img-2-q{
     width: 80vw;
+  }
+  .bias-header{
+    font-size: 4.2vw !important;
+  }
+  .bias-text{
+    font-size: 5vw !important;
+  }
+  .bias-details{
+    width: 85vw;
+  }
+  .text-question{
+    font-size: 4vw;
   }
 }
 @media screen and (width < 500px) {
