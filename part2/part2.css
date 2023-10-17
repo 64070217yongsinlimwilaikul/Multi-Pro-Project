@@ -35,13 +35,19 @@ section{
 .img-vertical{
   width: 30vw; /* ขนาดรูปที่ยาวแนวตั้ง ตอนหน้าจอ < 960px*/
 }
-.img-1-q{
-  width: 70vw;
+.img-horizontal{
+  width: 60vw;
+}
+.img-square{
+  width: 50vw;
+}
+.choice{
+  height: 150% !important;
 }
 
 /* จบ ต่อไปไม่ต้องรู้ก็ได้ */
 
-.part-title, .story{
+.part-title, .story, .choice{
   text-align: center;
   display: flex;
   justify-content: center;
@@ -83,9 +89,6 @@ section{
 }
 #section-17{
   height: 150% !important;
-}
-#section-21 > div > img{
-  width: 80vw !important;
 }
 #section-22 .text, #section-23 .text, #section-33 .text{
   color: #D4145A;
@@ -329,7 +332,13 @@ section{
     margin-left: -25.7vw;
   }
   .img-vertical{
-    width: 50vw;
+    width: 70vw;
+  }
+  .img-square{
+    width: 80vw;
+  }
+  .img-horizontal{
+    width: 95vw;
   }
   #button-phone{
     height: 15vw;
