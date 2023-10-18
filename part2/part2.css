@@ -84,6 +84,7 @@ section{
 }
 .bias{
   height: 180% !important;
+  gap: 1rem !important;
 }
 #section-16{
   height: 150% !important;
@@ -106,8 +107,8 @@ section{
   width: 50vw;
 }
 .bias img{
-  width: 60vw;
-  margin-bottom: 2rem;
+  width: 30vw;
+  margin-bottom: 1rem;
 }
 #img-1{
   width: 70vw; /* width ของรูปแรกที่ฝากสอนงานน้อง */
@@ -211,10 +212,10 @@ section{
 }
 .bias-header{
   color: #D4145A;
-  font-size: 3.3vw !important;
+  font-size: 2.5rem !important;
 }
 .bias-text{
-  font-size: 3rem !important;
+  font-size: 2rem !important;
 }
 .words{
   font-size: 1.8vw;
@@ -373,10 +374,10 @@ section{
     width: 80vw;
   }
   .bias-header{
-    font-size: 5.3vw !important;
+    font-size: 5.7vw !important;
   }
   .bias-text{
-    font-size: 5vw !important;
+    font-size: 5.3vw !important;
   }
   .bias-details{
     width: 85vw;
@@ -387,6 +388,9 @@ section{
   .bias img{
     width: 90vw;
     margin-bottom: 1rem;
+  }
+  .bias{
+    height: 180% !important;
   }
 }
 @media screen and (width < 500px) {
