@@ -182,7 +182,7 @@ section{
   height: 80%;
 }
 #section-24 .word-bubble{
-  width: 43%; /* ปรับขนาดสำหรับ section-24 */
+  width: 32%; /* ปรับขนาดสำหรับ section-24 */
   height: 50%;
 }
 #section-30 .text{
@@ -447,6 +447,30 @@ section{
 .active.from-right {
   animation: fade-right 0.5s ease-in;
 }
+.active.from-bottom-slower {
+  animation: fade-bottom-slower .7s ease-in;
+}
+.active.from-top-slower {
+  animation: fade-top-slower .7s ease-in;
+}
+.active.from-left-slower {
+  animation: fade-left-slower .7s ease-in;
+}
+.active.from-right-slower {
+  animation: fade-right-slower .7s ease-in;
+}
+.active.from-bottom-faster {
+  animation: fade-bottom-faster .3s ease-in;
+}
+.active.from-top-faster {
+  animation: fade-top-faster .3s ease-in;
+}
+.active.from-left-faster {
+  animation: fade-left-faster .3s ease-in;
+}
+.active.from-right-faster {
+  animation: fade-right-faster .3s ease-in;
+}
 
 @keyframes fade-bottom {
   0% {
@@ -479,8 +503,91 @@ section{
     opacity: 1;
   }
 }
-
 @keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-bottom-slower {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-top-slower {
+  /* this looks really weird but it's here*/
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left-slower {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right-slower {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-bottom-faster {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-top-faster {
+  /* this looks really weird but it's here*/
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left-faster {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right-faster {
   0% {
     transform: translateX(100px);
     opacity: 0;
