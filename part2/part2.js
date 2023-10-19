@@ -1,4 +1,6 @@
 function reveal() {
+  var x = document.querySelector("#section-5");
+  console.log(window.pageYOffset)
   var reveals = document.querySelectorAll(".reveal");
   // อันนี้คือความเร็วการ fade โดยกำหนดตัวเลขที่ตัวแปรข้างล่างนะ  เหมาะนำไปใช้กับ tag ที่ใช้ความเร็วเท่าๆกัน//
   for (var i = 0; i < reveals.length; i++) {
@@ -27,8 +29,8 @@ function reveal() {
     }
   }
 }
-
-window.addEventListener("scroll", reveal); 
+window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", fixed);
 
 function contentGates(seclist) {
   for (let i = seclist[0]; i <= seclist[1]; i++) {
@@ -43,7 +45,7 @@ function contentGates(seclist) {
 }
 function scrollToID(ID) { document.querySelector('#section-' + ID).scrollIntoView(); }
 
-function stopPhone(){
+function stopPhone() {
   console.log(document.querySelector('.phone-shake'));
   document.querySelector('#phone').classList.remove('phone-shake');
   document.querySelector('.button-phone').classList.remove('button-phone-animate')
