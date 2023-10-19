@@ -18,7 +18,7 @@
     transition: opacity .5s;
 }
 
-html,body{margin: 0; padding: 0;scroll-behavior: smooth;}
+html,body{margin: 0; padding: 0;scroll-behavior: smooth; max-width:100%; overflow-x:hidden;}
 
 section{
     display: flex;
@@ -27,6 +27,7 @@ section{
     text-align: center;
     width: 100%;
     height: 100%;
+    padding: 0 15rem;
 }
 
 .none{display: none;}
@@ -36,12 +37,12 @@ section{
 /* Section */
 .part-number{
     color: var(--white);
-    font-size: 4vw;
+    font-size: 4.5rem;
     font-family:  'Pridi', serif;
   }
 .part-name{
     color: var(--red);
-    font-size: 7vw;
+    font-size: 7.5rem;
     font-family:  'Pridi', serif;
 }
 .part-title{
@@ -51,42 +52,42 @@ section{
 
 .blue-to-white-gra{background: linear-gradient(180deg, var(--blue) 0%, var(--white) 100%);}
 .white-to-blue-gra{background: linear-gradient(180deg, var(--white) 0%, var(--blue) 100%);}
-.text{font-size: 3vw;}
-.responseText,.responseCircleText {font-size: 2.5vw;}
-.circleText{font-size: 1.75vw;}
-.badText{font-size: 2vw;}
-.goodText{font-family: CSPrajadBold; font-size: 2vw;}
-.endText{font-size: 2vw; color: white;}
+.text{font-size: 3rem;}
+.responseText,.responseCircleText {font-size: 2.5rem;}
+.circleText{font-size: 1.6rem;}
+.badText{font-size: 1.5rem;}
+.goodText{font-family: CSPrajadBold; font-size: 1.3rem;}
+.endText{font-size: 1.8rem; color: white;}
 
 .choices-grid-1{
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
-    row-gap: 20px;
-    padding: 1vh;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+    padding: 1.5rem;
 }
 .choices-grid-2{
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr;
-    row-gap: 30px;
-    padding: 5vh 10vw;
+    row-gap: 1.5rem;
+    padding: 1vh 8rem;
 }
 .choices-grid-3 {
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr;
-    row-gap: 5vh;
-    padding: 10vh 5vw 0;
-}
+    row-gap: 1.5rem;
+    padding: 3rem 8rem 0;
+  }
 .choices-button{
     height: auto;
-    padding: 10px;
-    font-size: 30px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
     color: var(--white);
     background-color: var(--red);
-    border-radius: 3.5rem;
+    border-radius: 1.5rem;
     border: none;
     cursor: pointer;
 }
@@ -96,17 +97,18 @@ section{
 .response{
     color: #000000;
     box-sizing: border-box;
-    width: 50vw;
+    width: 50rem;
     height: auto;
-    padding: 30px 15px;
-    border: 2px solid rgb(0, 0, 0);
+    padding: 3rem 5rem;
+    border: 0.05rem solid rgb(0, 0, 0);
 }
 .responseCircle{
     width: 100%;
-    height: 40vw;
+    height: 40rem;
     text-align: center;
     align-items: center;
     display: flex;
+    padding: 4rem;
 }
 
 .circle{
@@ -114,24 +116,25 @@ section{
     height: 45%;
     width: 14%;
     box-sizing: border-box;
-    border: 2px solid rgb(0, 0, 0);
+    border: 0.05rem solid rgb(0, 0, 0);
     border-radius: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
     background-color: var(--white);
     z-index: 10;
+    padding: 2rem 0.5rem;
 }
 #circle-1 {left: 10%; margin-top: -10%;}
 #circle-2 {right: 12%; margin-top: -16%; height: 60%; width: 16%;}
-#circle-3 {left: 20%; margin-top: -10%; height: 35%; width: 13%;}
+#circle-3 {left: 20%; margin-top: -10%; height: 40%; width: 17%;}
 #circle-4 {right: 10%; margin-top: -10%;}
-#circle-5 {right: 22%; margin-top: -10%; height: 40%; width: 14%;}
+#circle-5 {right: 22%; margin-top: -10%; height: 40%; width: 16%;}
 
 .badword{
   position: absolute;
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 0.05rem solid rgb(0, 0, 0);
   align-items: center;
   justify-content: center;
   display: flex;
@@ -147,39 +150,38 @@ section{
 #badword-4 {left: 43%; margin-top: -37%;}
 #badword-5 {left: 49%; margin-top: 16%;}
 
-#topic {color: #b00000; font-family: CSPrajadBold; font-size: 5vw;}
+#topic {color: #b00000; font-family: CSPrajadBold; font-size: 5rem;}
 
 .goodTextGrid {
     position: absolute;
     display: grid;
     grid-template-rows: 15% 70% 15%;
     align-items: center;
-    width: 40%;
-    height: 28vw;
-    gap: 10px;
-    margin-top: -15%;
-    left: 35%;
+    width: 19%;
+    height: 10rem;
+    gap: 1rem;
+    margin-top: -13%;
+    left: 45%;
 }
 
 .endSection{
     background: #001B7C;
     justify-content: space-between;
-    padding: 0vw 10vw;
 }
 .endButtonFlex{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 15px;
+    gap: 1rem;
 }
 .endButton{
     background: var(--red);
-    width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 3rem;
     border: none;
-    padding: 2vw;
+    padding: 1.5rem;
     cursor: pointer;
 }
 .endButton:hover{background-color: var(--redHover);}
@@ -190,7 +192,7 @@ section{
     height: 100%;
     border: 0;
     border-radius: 20%;
-    padding: 0.5vw;
+    padding: 0.5rem;
 }
 
 /*Specific Section*/
@@ -206,11 +208,11 @@ section{
 
 /*Image*/
 #img-1 {width: 80%;}
-#img-2 {width: 90%;}
+#img-2 {width: 50%;}
 #img-3 {width: 100%;}
-#img-4 {width: 50%; margin-left: -30vw;}
-#img-5 {width: 50%; margin-left: 30vw;}
-#img-6 {width: 90%;}
+#img-4 {width: 50%; margin-left: -25rem;}
+#img-5 {width: 50%; margin-left: 25rem;}
+#img-6 {width: 40%;}
 #img-7 {width: 100%;}
 #img-8 {width: 90%;}
 #img-9 {width: 100%;}
@@ -219,7 +221,7 @@ section{
 #img-12 {width: 80%;}
 #img-13 {width: 100%;}
 #img-14 {width: 55%;}
-#img-15 {width: 80%;}
+#img-15 {width: 90%;}
 #img-16 {width: 60%;}
 #img-17 {width: 50%;}
 #img-18 {width: 70%;}
@@ -260,24 +262,40 @@ section{
 }
 
 /* responsive */
+@media screen and (width < 1310px) {.text{font-size: 2.8rem;}}
+
+@media screen and (width < 1200px) {
+    .circleText{font-size: 1rem;}
+    .goodText{font-size: 1.25rem;}
+}
+
+@media screen and (width < 1200px) {
+    section{height: 80%; padding: 0 7rem;}
+}
+
 @media screen and (width < 960px) {
-    section{height: 80%;}
-    .part-number{font-size: 9vw;}
-    .part-name{font-size: 12vw;}
-    .text{font-size: 5.25vw;}
-    .response{width: 90%; font-size: 5vw;}
-    .responseCircle{width: 100%; height: 55vw;}
-    .responseText{font-size: 5.25vw;}
-    .responseCircleText{font-size: 4.25vw;}
-    .circleText{font-size: 2.1vw;}
-    .goodText{font-size: 2.5vw;}
-    .endText{font-size: 2.5vw;}
+    section{height: 80%; padding: 0 4rem;}
+    .part-number{font-size: 5rem;}
+    .part-name{font-size: 8rem;}
+    .text{font-size: 2rem;}
+    .response{width: 90%; font-size: 1.5rem; padding: 1rem 2rem;}
+    .responseCircle{width: 100%; height: 40rem;}
+    .responseText{font-size: 2rem;}
+    .responseCircleText{font-size: 2rem;}
+    .circleText{font-size: 1.5rem;}
+    .goodText{font-size: 1.25rem;}
+    .badText{font-size: 1rem;}
+    .endText{font-size: 1.5rem;}
 
     .endButton{
-        width: 12vw;
-        height: 12vw;
-        padding: 2.5vw;
+        width: 6rem;
+        height: 6rem;
+        padding: 1.25rem;
+        border-radius: 2.5rem;
     }
+
+    .choices-grid-2 {padding: 1vh 2rem;}
+    .choices-grid-3 {padding: 3rem 5rem 0;}
 
     #section-3{height: 110%;}
     #section-8{height: 110%;}
@@ -290,63 +308,118 @@ section{
     #section-47{height: 20%;}
 
     #img-1 {width: 60%;}
-    #img-2 {width: 75%;}
+    #img-2 {width: 60%;}
+    #img-4 {margin-left: -10rem;}
+    #img-5 {margin-left: 10rem;}
+    #img-6 {width: 60%;}
     #img-9 {width: 80%;}
     #img-16 {width: 70%;}
     #img-17 {width: 55%;}
     #img-18 {width: 90%;}
 
-    #circle-5 {right: 20%; margin-top: -10%; height: 50%; width: 25%;}
+    #circle-5 {right: 20%; margin-top: -10%; height: 40%; width: 20%;}
 
-    #topic {font-size: 8vw;}
+    #topic {font-size: 3rem;}
+}
+
+@media screen and (width < 840px){
+    .goodTextGrid{
+        width: 20%;
+        height: 7rem;
+    }
+    .goodText{font-size: 1rem;}
+    .circleText {font-size: 1rem;}
 }
 
 @media screen and (width < 640px){
-    section{height: 50%;}
-    .endText{font-size: 3vw;}
+    section{height: 50%; padding: 0 1.5rem;}
+
+    .part-number{font-size: 2.5rem;}
+    .part-name{font-size: 4rem;}
+    .text {font-size: 2rem;}
+    .circleText{font-size: 1rem;}
+    .responseText, .responseCircleText{font-size: 1.5rem;}
+    .badText {font-size: 0.5rem;}
+    .endText{font-size: 1.5rem;}
+
+    .responseCircle {height: 25rem;}
 
     .endButton{
-        width: 15vw;
-        height: 15vw;
-        padding: 3vw;
+        width: 5rem;
+        height: 5rem;
+        padding: 1rem;
+        border-radius: 2rem;
     }
 
     #img-1 {width: 75%;}
-    #img-4 {width: 60%;}
-    #img-5 {width: 60%;}
+    #img-2 {width: 80%;}
+    #img-4 {width: 60%; margin-left: -7rem;}
+    #img-5 {width: 60%; margin-left: 7rem;}
+    #img-6 {width: 80%;}
     #img-14 {width: 65%;}
     #img-17 {width: 50%;}
 
     .choices-grid-1{
         display: grid;
         grid-auto-rows: 1fr;
-        grid-template-columns: 80vw;
+        grid-template-columns: 1fr;
         justify-content: center;
-        row-gap: 20px;
-        padding: 1vh;
+        row-gap: 1rem;
+        padding: 1rem;
     }
-    .choices-button{font-size: 4vw;}
+    .choices-grid-3 {padding: 3rem 2rem 0;}
 
-    .circleText {font-size: 3.6vw;}
+    .goodTextGrid{
+        width: 30%;
+        left: 40%;
+        margin-top: -20%;
+        height: 10rem;
+    }
+
+    .choices-button{font-size: 1.25rem;}
+
     #circle-1 {left: 10%; margin-top: -35%; height: 100%; width: 24%;}
     #circle-2 {right: 9%; margin-top: -45%; height: 120%; width: 30%;}
     #circle-3 {left: 18%; margin-top: -9%; height: 65%; width: 21%;}
     #circle-4 {right: 10%; margin-top: -10%; height: 80%; width: 20%;}
+    #circle-5 {margin-top: -13%; height: 50%; width: 25%;}
+
 }
+@media screen and (width < 580px){.goodTextGrid{height: 8rem;}}
+@media screen and (width < 500px){.goodTextGrid{height: 6rem;} .goodText{font-size: 0.9rem;}}
 
 @media screen and (width < 440px){
-    .goodText{font-size: 4vw;}
+    .part-number{font-size: 2rem;}
+    .part-name{font-size: 3.5rem;}
+    .text {font-size: 1.25rem;}
+    .circleText {font-size: 0.8rem;}
+    .responseText, .responseCircleText{font-size: 1rem;}
+    .badText {font-size: 0.5rem;}
+    .goodText{font-size: 0.8rem;}
+    .endText{font-size: 1rem;}
+
 
     #section-35{height: 80%;}
     #section-36{height: 80%;}
 
     #img-1 {width: 100%;}
-    #img-2 {width: 100%;}
     #img-14 {width: 80%;}
     #img-16 {width: 80%;}
     #img-17 {width: 70%;}
 
-    .responseCircle{width: 100%; height: 85vw;}
+    #topic {font-size: 2rem;}
+    
+    .circle{padding: 2rem 0.3rem;}
+
+    .responseCircle{width: 100%; height: 20rem;}
+    
+    .choices-button {font-size: 0.8rem;}
 
     .goodTextGrid {margin-top: -23%;}
+}
+
+@media screen and (width < 360px){
+    .goodTextGrid {height: 4.8rem;}
+    .goodText{font-size: 0.7rem;}
+
 }
