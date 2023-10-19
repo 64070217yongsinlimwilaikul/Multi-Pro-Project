@@ -95,8 +95,16 @@ section{
 #section-22 .text-question, #section-23 .text-question, #section-33 .text-question{
   color: #D4145A;
 }
+#section-43{
+  background: linear-gradient(180deg, var(--white) 0%, var(--blue) 300%);
+}
+#section-44{
+  background: linear-gradient(180deg, var(--white) -100%, var(--blue) 200%);
+}
 .final-section{
   position: relative;
+  height: 50%;
+  background: linear-gradient(180deg, var(--white) -200%, var(--blue) 100%);
 }
 .story-details{
     display: flex;
@@ -307,7 +315,11 @@ section{
     width: 100%;
     height: 100%;
 }
-
+.white-to-blue-gra{
+  background: linear-gradient(180deg, var(--white) 0%, var(--blue) 100%);
+  width: 100%;
+  height: 100%;
+}
 /* responsive */
 @media screen and (width < 960px) { /* เมื่อขนาดความกว้างหน้าจอ < 1000px */
   .part-number{
