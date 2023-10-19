@@ -1,0 +1,180 @@
+@font-face { font-family: CSPrajad; src: url('../assets/fonts/CSPraJad\ v2.otf'); }
+@font-face { font-family: CSPrajadBold; src: url('../assets/fonts/CSPraJad-bold\ v2.otf'); }
+
+::selection{
+  background-color: pink;
+  color: white;
+}
+*{
+    box-sizing: border-box;
+    font-family: CSPrajad;
+    text-decoration: none;
+    transition: all .5s;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --blue: #001B7C;
+    --red: #FF3A21;
+    --white: #ffffff;
+}
+
+/* ส่วนของตรงนี้จะ เป็น class ที่ควรทำความเข้าใจเพราะจะใช้ร่วมกันหลายๆ section*/ 
+section{
+  width: 100%;
+  height: 100%; /* ความกว้างยาวของแต่ละ section */
+}
+#section-1{
+    background-color: var(--blue);
+}
+#section-3 > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.story{
+  height: 125% !important; /* ส่วนclassของเนื้อเรื่องให้ยาว 125% ถ้าเลื่อนแล้วแต่ละหน้าดูยาวไปให้ปรับตรงนี้*/
+}
+section > div{
+    width: 75vw;
+}
+.final-section{
+    position: relative;
+    background-color: var(--blue);
+    height: 50% !important;
+  }
+/* จบ ต่อไปไม่ต้องรู้ก็ได้ */
+
+.part-title, .story, .choice{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* แค่ทำให้เนื้อหาอยู่ตรงกลางไม่มีอะไรมาก */
+}
+
+.text{
+  font-size: 4rem; /* class ของข้อความที่ปรากฎบนหน้าจอไม่ใช่ในกรอบคำพูด */
+  color: black;
+
+}
+.button-to-part1{
+  display: block;
+  background-image: url(../assets/img/PART2/Back-to-part1.png);
+  background-size: cover;
+  width: 5vw;
+  height: 5vw;
+  bottom: 5%;
+  position: absolute;
+  left: 5%;
+}
+.button-to-part3{
+  display: block;
+  background-image: url(../assets/img/PART2/Go-to-part3.png);
+  background-size: cover;
+  width: 5vw;
+  height: 5vw;
+  bottom: 5%;
+  position: absolute;
+  right: 5%;
+}
+
+/* ในส่วนของข้างล่างจะเป็น อารมณ์คล้ายๆ frame work นั่นแหละ */
+
+/* gradient */
+.bold{
+  font-weight: bold;
+}
+.blue-to-red-gra{
+    background: linear-gradient(180deg, var(--blue) 0%, var(--red) 100%);
+    width: 100%;
+    height: 100%;
+}
+.red-to-blue-gra{
+    background: linear-gradient(180deg, var(--red) 0%, var(--blue) 100%);
+    width: 100%;
+    height: 100%;
+}
+.blue-to-white-gra{
+    background: linear-gradient(180deg, var(--blue) 0%, var(--white) 100%);
+    width: 100%;
+    height: 100%;
+}
+.white-to-blue-gra{
+    background: linear-gradient(180deg, var(--white) 0%, var(--blue) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+/* responsive */
+@media screen and (width < 960px) { /* เมื่อขนาดความกว้างหน้าจอ < 1000px */
+  .text{
+    font-size: 5vw;
+  }
+}
+/* related to fade to show gimmick */
+.reveal, .reveal-2{
+    position: relative;
+    opacity: 0;
+  }
+  
+.reveal.active, .reveal-2.active{
+  opacity: 1;
+}
+.active.from-bottom {
+  animation: fade-bottom 0.5s ease-in;
+}
+.active.from-top {
+  animation: fade-top 0.5s ease-in;
+}
+.active.from-left {
+  animation: fade-left 0.5s ease-in;
+}
+.active.from-right {
+  animation: fade-right 0.5s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-top {
+  /* this looks really weird but it's here*/
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
