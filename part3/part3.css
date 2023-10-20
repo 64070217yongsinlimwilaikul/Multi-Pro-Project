@@ -158,10 +158,10 @@ section{
     grid-template-rows: 15% 70% 15%;
     align-items: center;
     width: 19%;
-    height: 10rem;
+    height: 12rem;
     gap: 1rem;
-    margin-top: -13%;
-    left: 45%;
+    margin-top: -10%;
+    left: 43%;
 }
 
 .endSection{
@@ -267,6 +267,7 @@ section{
 @media screen and (width < 1200px) {
     .circleText{font-size: 1rem;}
     .goodText{font-size: 1.25rem;}
+    .goodTextGrid{left: 45%;}
 }
 
 @media screen and (width < 1200px) {
@@ -296,6 +297,13 @@ section{
 
     .choices-grid-2 {padding: 1vh 2rem;}
     .choices-grid-3 {padding: 3rem 5rem 0;}
+
+    .goodTextGrid{
+        height: 10rem;
+        gap: 1rem;
+        margin-top: -13%;
+        left: 45%;
+    }
 
     #section-3{height: 110%;}
     #section-8{height: 110%;}
