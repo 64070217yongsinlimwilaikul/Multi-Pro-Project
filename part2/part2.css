@@ -193,6 +193,16 @@ section{
   border: solid;
   padding: 1.8rem;
 }
+#section-12 > div{
+  position: relative;
+}
+#position{
+  position: absolute;
+  bottom: 40.5%;
+  left: 42.5%;
+  font-size: .8vw;
+  font-weight: bold;
+}
 .q{
   display: flex;
   gap: 2rem;
