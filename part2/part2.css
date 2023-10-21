@@ -31,7 +31,7 @@ section{
   height: 125% !important; /* ส่วนclassของเนื้อเรื่องให้ยาว 125% ถ้าเลื่อนแล้วแต่ละหน้าดูยาวไปให้ปรับตรงนี้*/
 }
 .img-vertical{
-  width: 30vw; /* ขนาดรูปที่ยาวแนวตั้ง ตอนหน้าจอ < 960px*/
+  width: 25vw; /* ขนาดรูปที่ยาวแนวตั้ง ตอนหน้าจอ < 960px*/
 }
 .img-horizontal{
   width: 60vw;
@@ -47,7 +47,7 @@ section{
 .all-details-book{
   display: flex;
 }
-.part-title, .story, .choice{
+.part-title, .story, .choice, .flex-center{
   text-align: center;
   display: flex;
   justify-content: center;
@@ -73,9 +73,15 @@ section{
 #section-5{
   height: 500% !important;
 }
-#section-11, #section-12, #section-13, #section-22, #section-23, .bias{
+#section-11 > div, #section-12, #section-13, #section-22, #section-23, .bias{
   flex-direction: column;
   gap: 2rem; /* section 11 ให้รูปกับข้อความอยู่คนละบรรทัด + กับเว้นช่องว่างระหว่างกัน */
+}
+#section-11{
+  height: 375% !important;
+}
+#section-11 > div{
+  display: flex;
 }
 #section-12{
   height: 150% !important;
@@ -145,6 +151,9 @@ section{
   margin-right: 5rem;
   transition: opacity .3s;
 }
+.posit{
+  position: absolute !important;
+}
 #phone-background{
   background-image: url(../assets/img/PART2/PART2_5\(croped\).png);
   background-size: 100% 100%;
@@ -199,8 +208,8 @@ section{
 #position{
   position: absolute;
   bottom: 40.5%;
-  left: 42.5%;
-  font-size: .8vw;
+  left: 42%;
+  font-size: .7vw;
   font-weight: bold;
 }
 .q{
@@ -434,6 +443,9 @@ section{
   #section-13{
     height: 100% !important;
   }
+  #position{
+    font-size: 2.5vw;
+  }
 }
 @media screen and (width < 500px) {
   #phone-background{
@@ -450,12 +462,12 @@ section{
   }
 }
 /* related to fade to show gimmick */
-.reveal, .reveal-2, .reveal-3, #book-text{
+.reveal, .reveal-2, .reveal-3, #book-text, .reveal-4{
     position: relative;
     opacity: 0;
   }
   
-.reveal.active, .reveal-2.active, .reveal-3.active, #book-text.active{
+.reveal.active, .reveal-2.active, .reveal-3.active, #book-text.active, .reveal-4.active{
   opacity: 1;
 }
 .active.from-bottom {
