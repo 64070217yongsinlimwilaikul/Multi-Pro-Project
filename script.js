@@ -25,6 +25,8 @@ function answerShow(target,oppo) {
   oppo_panel.classList.add("panel-none");
 }
 
+function scrollToID(ID) { document.querySelector('#part-1-section-' + ID).scrollIntoView(); }
+
 function contentGates(seclist) {
   for (let i in seclist) {
     /*console.log('#part-1-section-' + seclist[i])*/
