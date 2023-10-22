@@ -78,6 +78,22 @@ function reveal() {
   for (var i = 0; i < sec11Visible; i++) {
     reveals4[i].classList.add("active");
   }
+  
+
+  var obj_all = document.querySelectorAll(".obj");
+  for (var i = 0; i < obj_all.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = obj_all[i].getBoundingClientRect().top;
+    var elementVisible = obj_all[i].dataset.fade; //ความเร็ว fade ไปแก้ที่ data set ของ html เลขมากโผล่ช้า เลขน้อยโผล่เร็ว
+    console.log(elementTop < windowHeight - elementVisible)
+    
+
+    if (elementTop < windowHeight - elementVisible) {
+      obj_all[i].classList.add("obj-" + (i + 1) + "-animate");
+    } else {
+      obj_all[i].classList.remove("obj-" + (i + 1) + "-animate");
+    }
+  }
 }
 window.addEventListener("scroll", reveal);
 function fixed() {
