@@ -120,10 +120,10 @@ section{
     align-items: center;  /* ทำไว้เพราะ section 8 อยากให้ตัวอักษรที่อยู่ข้างๆรูปอยู่ตรงกลาง */
 }
 .bias-details{
-  width: 60vw;
+  width: 35rem;
 }
-.bias img{
-  /* width: 30vw; */
+.bias-img{
+  width: 30vw;
   margin-bottom: 1rem;
 }
 #img-1{
@@ -464,8 +464,8 @@ section{
   .text-question{
     font-size: 4vw;
   }
-  .bias img{
-    /* width: 90vw; */
+  .bias-img{
+    width: 90vw;
     margin-bottom: 1rem;
   }
   .bias{
