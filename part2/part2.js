@@ -85,7 +85,7 @@ function reveal() {
     var windowHeight = window.innerHeight;
     var elementTop = obj_all[i].getBoundingClientRect().top;
     var elementVisible = obj_all[i].dataset.fade; //ความเร็ว fade ไปแก้ที่ data set ของ html เลขมากโผล่ช้า เลขน้อยโผล่เร็ว
-    console.log(elementTop < windowHeight - elementVisible)
+    console.log(elementTop)
     
 
     if (elementTop < windowHeight - elementVisible) {
