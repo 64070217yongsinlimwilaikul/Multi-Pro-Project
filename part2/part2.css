@@ -220,6 +220,9 @@ section{
 #section-12 > div{
   position: relative;
 }
+#section-35 > div > .bias-img{
+  width: 25vw;
+}
 #position{
   position: absolute;
   bottom: 38%;
@@ -332,6 +335,85 @@ section{
 .abs{
   position: absolute;
 }
+.obj-1{
+  width: 12vw;
+  top: 5%;
+  left: 6%;
+}
+.obj-2{
+  width: 12vw;
+  top: 8%;
+  left: 57%;
+}
+.obj-3{
+  width: 11.5vw;
+  top: -19%;
+  left: 6%;
+}
+.obj-4{
+  width: 6.3vw;
+  bottom: 4.8%;
+  left: 66%;
+}
+.obj-5{
+  width: 38vw;
+  bottom: 28%;
+  right: -15%;
+}
+.obj-6{
+  width: 18vw;
+  bottom: 15%;
+  left: 0%;
+}
+.obj-7{
+  width: 16vw;
+  bottom: 5%;
+  right: 5%;
+}
+.obj-8{
+  width: 20vw;
+  bottom: 5%;
+  right: 15%;
+  left: 15%;
+}
+.obj-1-animate{animation: obj-1 1s linear infinite;}
+.obj-2-animate{animation: obj-2 1s linear infinite;}
+.obj-3-animate{animation: obj-3 2.5s linear forwards;}
+.obj-4-animate{animation: obj-4 2.5s linear forwards;}
+.obj-5-animate{animation: obj-5 2s linear infinite;}
+.obj-6-animate{animation: obj-6 2s linear infinite;}
+.obj-7-animate{animation: obj-6 2s linear infinite;}
+.obj-8-animate{animation: obj-8 8s linear infinite;}
+@keyframes obj-1{
+  0%, 100%{transform: scale(1, 1);}
+  50%{transform: scale(1.2, 1.2);}
+}
+@keyframes obj-2{
+  0%, 100%{transform: scale(1, 1);}
+  50%{transform: scale(.8, .8);}
+}
+@keyframes obj-3{
+  0%{transform: scale(1, 1);}
+  100%{transform: scale(1.2, 1.2); top: -30.5%; left: 8%;}
+}
+@keyframes obj-4{
+  0%{transform: scale(1, 1);}
+  100%{transform: scale(.8, .8); bottom: -5%;}
+}
+@keyframes obj-5{
+  0%, 100%{transform: scale(1, 1);}
+  50%{transform: scale(.8, .8); bottom: 28%; right: -15%;}
+}
+@keyframes obj-6{
+  0%, 100%{transform: translateY(0);}
+  50%{transform: translateY(20px);}
+}
+@keyframes obj-8{
+  0%, 75%{transform: scale(1, 1); opacity: 1; bottom: 5%;}
+  25%{transform: scale(.85, .85); opacity: .5; bottom: .5%;}
+  50%{transform: scale(.85, .85); opacity: .5; bottom: .5%;}
+}
+
 .button-to-part1{
   display: block;
   background-image: url(../assets/img/PART2/Back-to-part1.png);
@@ -487,6 +569,9 @@ section{
     width: calc(1.5vw*3);
     left: 51%;
     bottom: 42.5%;
+  }
+  .obj{
+    width: 82vw;
   }
 }
 @media screen and (width < 500px) {
@@ -718,16 +803,4 @@ section{
   75%{
     transform: rotateZ(-3deg);
   }
-}
-.obj-1{
-  width: 42vw;
-  bottom: -1.2%;
-  right: 12.5%;
-}
-.obj-1-animate{
-  animation: obj-1 3s linear forwards;
-}
-@keyframes obj-1{
-  0%{transform: scale(1, 1);}
-  100%{transform: scale(.7, .7); bottom: -6.2%;}
 }
