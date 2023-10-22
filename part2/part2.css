@@ -350,7 +350,7 @@ section{
 }
 .obj-3{
   width: 11.5vw;
-  top: -19%;
+  top: -19.5%;
   left: 6%;
 }
 .obj-4{
@@ -397,11 +397,11 @@ section{
 }
 @keyframes obj-3{
   0%{transform: scale(1, 1);}
-  100%{transform: scale(1.2, 1.2); top: -30.5%; left: 8%;}
+  100%{transform: scale(1.2, 1.2) translate(5%, -8%)}
 }
 @keyframes obj-4{
   0%{transform: scale(1, 1);}
-  100%{transform: scale(.8, .8); bottom: -5%;}
+  100%{transform: scale(.8, .8) translateY(12%);}
 }
 @keyframes obj-5{
   0%, 100%{transform: scale(1, 1);}
@@ -571,8 +571,53 @@ section{
     left: 51%;
     bottom: 42.5%;
   }
-  .obj{
-    width: 82vw;
+  #section-35 > div > .bias-img{
+    width: 95vw;
+  }
+  .obj-1{
+    width: 42vw;
+    top: 5%;
+    left: 2%;
+  }
+  .obj-2{
+    width: 42vw;
+    top: 8%;
+    left: 53%;
+  }
+  .obj-3{
+    width: 36.5vw;
+    top: -19%;
+    left: 6%;
+  }
+  .obj-4{
+    width: 24vw;
+    bottom: 2%;
+    left: 62%;
+  }
+  .obj-5{
+    width: 100vw;
+    bottom: 30%;
+    right: -6%;
+  }
+  @keyframes obj-5{
+    0%, 100%{transform: scale(1, 1);}
+    50%{transform: scale(.8, .8); bottom: 30%; right: -6%;}
+  }
+  .obj-6{
+    width: 18vw;
+    bottom: 15%;
+    left: 0%;
+  }
+  .obj-7{
+    width: 16vw;
+    bottom: 5%;
+    right: 5%;
+  }
+  .obj-8{
+    width: 20vw;
+    bottom: 5%;
+    right: 15%;
+    left: 15%;
   }
 }
 @media screen and (width < 500px) {
