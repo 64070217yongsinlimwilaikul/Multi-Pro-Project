@@ -77,6 +77,7 @@ body  {
 .conversation-text{
   /* this limit the text to only takes up 50% of the screen */
   color: var(--red);
+  color: var(--red);
   font-weight: bold;
 }
 
@@ -126,6 +127,8 @@ body  {
     background-color: var(--red);
     border-radius: 30px;
     border: none;
+  }
+}
   }
 }
   .monologue{
