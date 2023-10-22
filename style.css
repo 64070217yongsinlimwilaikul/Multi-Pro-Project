@@ -3,6 +3,7 @@
     --red: #FF3A21;
     --red-select : rgb(178, 38, 19);
     --white: #ffffff;
+    scroll-behavior: smooth;
 }
 
 @font-face { font-family: CSPrajad; src: url('assets/fonts/CSPraJad\ v2.otf'); }
