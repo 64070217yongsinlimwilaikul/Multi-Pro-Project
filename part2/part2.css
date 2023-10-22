@@ -122,6 +122,9 @@ section{
 .bias-details{
   width: 35rem;
 }
+.bias-details2{
+  width: 75vw;
+}
 .bias-img{
   width: 30vw;
   margin-bottom: 1rem;
@@ -177,7 +180,7 @@ section{
 }
 
 .text{
-  font-size: 4rem; /* class ของข้อความที่ปรากฎบนหน้าจอไม่ใช่ในกรอบคำพูด */
+  font-size: 5vw; /* class ของข้อความที่ปรากฎบนหน้าจอไม่ใช่ในกรอบคำพูด */
 }
 .text-question{
   font-size: 3rem;
@@ -210,7 +213,7 @@ section{
   height: 90%;
 }
 #section-24 .word-bubble{
-  width: 32%; /* ปรับขนาดสำหรับ section-24 */
+  width: fit-content; /* ปรับขนาดสำหรับ section-24 */
   height: 50%;
 }
 #section-30 .text{
@@ -304,6 +307,7 @@ section{
   bottom: 80%; /* ตำแหน่งสำหรับ section 17 */
 }
 #word-buble-4{
+  width: 15vw !important;
   margin: auto;
   left: -80%;
   right:0;
@@ -324,9 +328,8 @@ section{
 #button-phone:hover{
   background-color: #AEAEAE;
 }
-.phone-active:active{
-  transform: translateY(20px);
-  transition: all .2s;
+#button-phone:active{
+  margin-top: 21rem;
 }
 .img-1-bi{
   position: absolute;
@@ -383,7 +386,7 @@ section{
 .obj-5-animate{animation: obj-5 2s linear infinite;}
 .obj-6-animate{animation: obj-6 2s linear infinite;}
 .obj-7-animate{animation: obj-6 2s linear infinite;}
-.obj-8-animate{animation: obj-8 8s linear infinite;}
+.obj-8-animate{animation: obj-8 5s linear infinite;}
 @keyframes obj-1{
   0%, 100%{transform: scale(1, 1);}
   50%{transform: scale(1.2, 1.2);}
@@ -409,9 +412,9 @@ section{
   50%{transform: translateY(20px);}
 }
 @keyframes obj-8{
-  0%, 75%{transform: scale(1, 1); opacity: 1; bottom: 5%;}
-  25%{transform: scale(.85, .85); opacity: .5; bottom: .5%;}
-  50%{transform: scale(.85, .85); opacity: .5; bottom: .5%;}
+  0%, 80%{transform: scale(1, 1); bottom: 5%;}
+  30%{transform: scale(.85, .85); bottom: .5%;}
+  50%{transform: scale(.85, .85); bottom: .5%;}
 }
 
 .button-to-part1{
@@ -514,12 +517,10 @@ section{
   #button-phone{
     height: 15vw;
     width: 40vw;
+    margin-top: 10rem;
   }
   #employee-img{
     width: 90vw !important;
-  }
-  #button-phone{
-    margin-top: 10rem;
   }
   .button-ans{
     height: 15vw;
