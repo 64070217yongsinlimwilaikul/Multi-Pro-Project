@@ -325,6 +325,10 @@ section{
   transform: translateY(20px);
   transition: all .2s;
 }
+.img-1-bi{
+  position: absolute;
+  width: 20vw !important;
+}
 .button-to-part1{
   display: block;
   background-image: url(../assets/img/PART2/Back-to-part1.png);
