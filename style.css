@@ -116,7 +116,7 @@ border: none;
   font-family: CSPrajad;
   color: var(--white);
   background-color: var(--red);
-  border-radius: 30px;
+  border-radius: 5rem;
   border: none;
 }
 .part-1-choice-button:hover{
@@ -124,41 +124,41 @@ background-color: var(--red-select);
 
 }
 @media screen and (max-width: 780px) {
-.part-1-choice-button{
-  margin: 4vh 10vh 0vh 10vh;
-  width: 30%;
-  height: 10vh;
-  font-size: 20px;
-  padding: 1vw;
-  font-family: CSPrajad;
-  color: var(--white);
-  background-color: var(--red);
-  border-radius: 30px;
-  border: none;
-}
-.monologue{
-  /* for text that white text in the middle of screen */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 5vw;
-  color: black; 
+  .part-1-choice-button{
+    margin: 4vh 10vh 0vh 10vh;
+    width: 30%;
+    height: 10vh;
+    font-size: 20px;
+    padding: 1vw;
+    font-family: CSPrajad;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 5rem;
+    border: none;
+  }
+  .monologue{
+    /* for text that white text in the middle of screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5vw;
+    color: black; 
 }
 }
 @media screen and (max-width: 500px) {
-.part-1-choice-button{
-  margin: 4vh 10vh 0vh 10vh;
-  width: 30%;
-  height: 10vh;
-  font-size: 15px;
-  padding: 1vw;
-  font-family: CSPrajad;
-  color: var(--white);
-  background-color: var(--red);
-  border-radius: 30px;
-  border: none;
-}
+  .part-1-choice-button{
+    margin: 4vh 10vh 0vh 10vh;
+    width: 30%;
+    height: 10vh;
+    font-size: 15px;
+    padding: 1vw;
+    font-family: CSPrajad;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 5rem;
+    border: none;
+  }
 }
 
 
