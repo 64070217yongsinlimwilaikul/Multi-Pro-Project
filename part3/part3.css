@@ -54,7 +54,7 @@ section{
 .white-to-blue-gra{background: linear-gradient(180deg, var(--white) 0%, var(--blue) 100%);}
 .text{font-size: 3rem;}
 .responseText,.responseCircleText {font-size: 2.5rem;}
-.circleText{font-size: 1.6rem;}
+.circleText{font-size: 1.5rem;}
 .badText{font-size: 1.5rem;}
 .goodText{font-family: CSPrajadBold; font-size: 1.3rem;}
 .endText{font-size: 1.8rem; color: white;}
@@ -87,7 +87,7 @@ section{
     font-size: 1.5rem;
     color: var(--white);
     background-color: var(--red);
-    border-radius: 1.5rem;
+    border-radius: 5rem;
     border: none;
     cursor: pointer;
 }
@@ -140,8 +140,8 @@ section{
   display: flex;
   z-index: 10;
   background: white;
-  height: 15%;
-  width: 10%;
+  height: 16%;
+  width: 16%;
   border-radius: 50%;
 }
 #badword-1 {left: 17%; margin-top: 13%;}
@@ -158,10 +158,10 @@ section{
     grid-template-rows: 15% 70% 15%;
     align-items: center;
     width: 19%;
-    height: 10rem;
+    height: 12rem;
     gap: 1rem;
-    margin-top: -13%;
-    left: 45%;
+    margin-top: -10%;
+    left: 43%;
 }
 
 .endSection{
@@ -262,7 +262,11 @@ section{
 }
 
 /* responsive */
-@media screen and (width < 1310px) {.text{font-size: 2.8rem;}}
+@media screen and (width < 2600px) {
+    .goodTextGrid{height: 22rem; left: 45%;}
+}
+@media screen and (width < 1600px){.goodTextGrid{height: 12rem;}}
+@media screen and (width < 1310px) {.text{font-size: 2.8rem;} .goodTextGrid{height: 12rem;}}
 
 @media screen and (width < 1200px) {
     .circleText{font-size: 1rem;}
@@ -271,6 +275,7 @@ section{
 
 @media screen and (width < 1200px) {
     section{height: 80%; padding: 0 7rem;}
+    .badText{font-size: 1rem;}
 }
 
 @media screen and (width < 960px) {
@@ -284,7 +289,6 @@ section{
     .responseCircleText{font-size: 2rem;}
     .circleText{font-size: 1.5rem;}
     .goodText{font-size: 1.25rem;}
-    .badText{font-size: 1rem;}
     .endText{font-size: 1.5rem;}
 
     .endButton{
@@ -292,10 +296,18 @@ section{
         height: 6rem;
         padding: 1.25rem;
         border-radius: 2.5rem;
-    }
+        }
+    
 
     .choices-grid-2 {padding: 1vh 2rem;}
     .choices-grid-3 {padding: 3rem 5rem 0;}
+
+    .goodTextGrid{
+        height: 10rem;
+        gap: 1rem;
+        margin-top: -13%;
+        left: 45%;
+    }
 
     #section-3{height: 110%;}
     #section-8{height: 110%;}
@@ -321,7 +333,6 @@ section{
 
     #topic {font-size: 3rem;}
 }
-
 @media screen and (width < 840px){
     .goodTextGrid{
         width: 20%;
@@ -394,7 +405,7 @@ section{
     .text {font-size: 1.25rem;}
     .circleText {font-size: 0.8rem;}
     .responseText, .responseCircleText{font-size: 1rem;}
-    .badText {font-size: 0.5rem;}
+    .badText {font-size: 0.4rem;}
     .goodText{font-size: 0.8rem;}
     .endText{font-size: 1rem;}
 
