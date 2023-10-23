@@ -193,8 +193,8 @@ section{
   font-weight: 600;
 }
 .word-bubble{
-    height: 100%; /* ถ้าใช้ % จะอิงจาก div แม่ ซึ่ง divแม่จะมีขนาดเท่ากับเนื้อหา เช่นรูป สามารถใช้ vw เพื่อง่ายต่อการทำ responsive ได้ */
-    width: 25%;
+    height: 110%; /* ถ้าใช้ % จะอิงจาก div แม่ ซึ่ง divแม่จะมีขนาดเท่ากับเนื้อหา เช่นรูป สามารถใช้ vw เพื่อง่ายต่อการทำ responsive ได้ */
+    width: 32%;
     border: 1px solid black;
     position: absolute !important;
     background-color: white;
@@ -209,7 +209,7 @@ section{
   height: 45%;
 }
 #section-17 .word-bubble{
-  width: 32%; /* ปรับขนาดสำหรับ section-17 */
+  width: 30%; /* ปรับขนาดสำหรับ section-17 */
   height: 90%;
 }
 #section-24 .word-bubble{
@@ -241,14 +241,15 @@ section{
   z-index: 1;
 }
 .q{
-  display: flex;
+  display:grid;
   gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  width: 50vw;
 }
 .img-2-q{
   width: 40vw;
 }
 .button-ans{
-  width: 18vw;
   height: 7vw;
   padding: 1.5rem;
   border-radius: 100px;
@@ -307,7 +308,7 @@ section{
   bottom: 80%; /* ตำแหน่งสำหรับ section 17 */
 }
 #word-buble-4{
-  width: 15vw !important;
+  width: 29vw !important;
   margin: auto;
   left: -80%;
   right:0;
@@ -329,7 +330,7 @@ section{
   background-color: #AEAEAE;
 }
 #button-phone:active{
-  margin-top: 21rem;
+  top: 1%;
 }
 .img-1-bi{
   position: absolute;
@@ -421,8 +422,8 @@ section{
   display: block;
   background-image: url(../assets/img/PART2/Back-to-part1.png);
   background-size: cover;
-  width: 5vw;
-  height: 5vw;
+  width: 6vw;
+  height: 6vw;
   bottom: 5%;
   position: absolute;
   left: 5%;
@@ -431,8 +432,8 @@ section{
   display: block;
   background-image: url(../assets/img/PART2/Go-to-part3.png);
   background-size: cover;
-  width: 5vw;
-  height: 5vw;
+  width: 6vw;
+  height: 6vw;
   bottom: 5%;
   position: absolute;
   right: 5%;
@@ -524,7 +525,6 @@ section{
   }
   .button-ans{
     height: 15vw;
-    width: 40vw;
   }
   .img-1-q{
     width: 95vw;
@@ -623,6 +623,18 @@ section{
     0%, 80%{transform: scale(1, 1); bottom: 3.5%;}
     30%{transform: scale(.85, .85); bottom: -1.5%;}
     50%{transform: scale(.85, .85); bottom: -1.5%;}
+  }
+  .q{
+    grid-template-columns: 1fr;
+    width: 50vw;
+  }
+  .button-to-part1{
+    width: 14vw;
+    height: 14vw;
+  }
+  .button-to-part3{
+    width: 14vw;
+    height: 14vw;
   }
 }
 @media screen and (width < 500px) {
