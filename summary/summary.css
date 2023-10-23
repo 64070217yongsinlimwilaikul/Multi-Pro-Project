@@ -20,6 +20,8 @@ body{
     --blue: #001B7C;
     --red: #FF3A21;
     --white: #ffffff;
+    --redHover: #d61900;
+    --redActive: #ff6b58;
 }
 
 /* ส่วนของตรงนี้จะ เป็น class ที่ควรทำความเข้าใจเพราะจะใช้ร่วมกันหลายๆ section*/ 
@@ -35,6 +37,7 @@ section{
     flex-direction: column;
     gap: 1rem;
 }
+.endText{font-size: 1.8rem; color: white;}
 .story{
   height: 125% !important; /* ส่วนclassของเนื้อเรื่องให้ยาว 125% ถ้าเลื่อนแล้วแต่ละหน้าดูยาวไปให้ปรับตรงนี้*/
 }
@@ -60,27 +63,33 @@ section > div{
   color: black;
 
 }
-.button-to-part1{
-  display: block;
-  background-image: url(../assets/img/PART2/Back-to-part1.png);
-  background-size: cover;
-  width: 5vw;
-  height: 5vw;
-  bottom: 5%;
-  position: absolute;
-  left: 5%;
+.endButtonFlex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
 }
-.button-to-part3{
-  display: block;
-  background-image: url(../assets/img/PART2/Go-to-part3.png);
-  background-size: cover;
-  width: 5vw;
-  height: 5vw;
-  bottom: 5%;
-  position: absolute;
-  right: 5%;
+.endButton{
+  background: var(--red);
+  width: 8rem;
+  height: 8rem;
+  border-radius: 3rem;
+  border: none;
+  padding: 1.3rem;
+  cursor: pointer;
 }
-
+.endButton:hover{background-color: var(--redHover);}
+.endButton:active{background-color: var(--redActive);}
+.endSquare{
+  background: var(--white);
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 20%;
+  padding: 0.5rem;
+}
+#img-logo{width: 100%;}
 /* ในส่วนของข้างล่างจะเป็น อารมณ์คล้ายๆ frame work นั่นแหละ */
 
 /* gradient */
@@ -109,11 +118,30 @@ section > div{
 }
 
 /* responsive */
-@media screen and (width < 960px) { /* เมื่อขนาดความกว้างหน้าจอ < 1000px */
-  .text{
-    font-size: 5vw;
-  }
+@media screen and (width < 960px) {/* เมื่อขนาดความกว้างหน้าจอ < 1000px */
+    .endButton{
+        width: 6rem;
+        height: 6rem;
+        padding: 1.2rem;
+        border-radius: 2.5rem;
+        }
+    .text{
+          font-size: 5vw;
+        }
 }
+@media screen and (width < 640px){
+    .endButton{
+        width: 5rem;
+        height: 5rem;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+    .endText{font-size: 1.5rem;}
+}
+@media screen and (width < 440px){
+  .endText{font-size: 1rem;}
+}
+
 /* related to fade to show gimmick */
 .reveal, .reveal-2{
     position: relative;
