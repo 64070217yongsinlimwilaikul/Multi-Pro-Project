@@ -37,6 +37,9 @@ section{
     flex-direction: column;
     gap: 1rem;
 }
+#section-9 img{
+  width: 25vw;
+}
 .endText{font-size: 1.8rem; color: white;}
 .story{
   height: 125% !important; /* ส่วนclassของเนื้อเรื่องให้ยาว 125% ถ้าเลื่อนแล้วแต่ละหน้าดูยาวไปให้ปรับตรงนี้*/
@@ -127,6 +130,9 @@ section > div{
         }
     .text{
           font-size: 5vw;
+        }
+    #section-9 img{
+          width: 40vw;
         }
 }
 @media screen and (width < 640px){
