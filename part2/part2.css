@@ -205,11 +205,11 @@ section{
     justify-content: center;/* กรอบคำพูด */
 }
 #section-16 .word-bubble{
-  width: 30%; /* ปรับขนาดสำหรับ section-16 */
+  width: 32%; /* ปรับขนาดสำหรับ section-16 */
   height: 45%;
 }
 #section-17 .word-bubble{
-  width: 30%; /* ปรับขนาดสำหรับ section-17 */
+  width: 32%; /* ปรับขนาดสำหรับ section-17 */
   height: 90%;
 }
 #section-24 .word-bubble{
